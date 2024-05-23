@@ -78,7 +78,7 @@ infosage/
 └── README.md
 ```
 ## License
-   This project is licensed under the MIT License. See the LICENSE file for more details.
+   This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md). See the LICENSE file for more details.
 
 ## Acknowledgments
    - Data sources: Wikidata, DBpedia
