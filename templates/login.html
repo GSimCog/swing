@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+    <form action="{{ url_for('login') }}" method="POST">
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        required
+      /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br />
+      <input type="submit" value="Log in" />
+    </form>
+    <p>
+      Don't have an account? <a href="{{ url_for('register') }}">Register</a>
+    </p>
+    <h2>Top 10 Scores</h2>
+    <ol>
+      {% for user in top_scores %}
+      <li>{{ user.username }}: {{ user.score }}</li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>

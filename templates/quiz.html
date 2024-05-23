@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <title>Quiz</title>
+    <style>
+      .right-align {
+        text-align: right;
+      }
+
+      .img-default-size {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: auto;
+      }
+
+      .audio-default {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="{{ flag_image_url }}"
+      alt="Flag of the country"
+      class="img-default-size"
+    />
+    <div class="audio-default">
+      {% block content %} {{ anthem_audio|safe }} {% endblock %}
+    </div>
+    <form action="/" method="POST">
+      <h1>{{ question }}</h1>
+      {% for option in options_with_format %}
+      <label>
+        <input type="radio" name="answer" value="{{ option.value }}" />
+        {{ option.display }} </label
+      ><br />
+      {% endfor %}
+      <br />
+      <input type="submit" value="Next question" />
+      <div class="right-align">
+        <input type="submit" name="wrong_answers" value="Report errors" />
+      </div>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    {% if current_user.is_authenticated and current_user.username == 'admin' %}
+    <div class="admin-links">
+      <form action="{{ url_for('reload_country_quiz') }}" method="POST">
+        <button type="submit">Reload Quiz Data</button>
+      </form>
+      {% endif %} {% if current_user.is_authenticated and current_user.username
+      == 'admin' %}
+      <div class="admin-links">
+        <a href="{{ url_for('reported_questions') }}">Reported Questions</a>
+      </div>
+      {% endif %} {% if current_user.is_authenticated and current_user.username
+      == 'admin' %}
+      <div class="admin-links">
+        <a href="{{ url_for('country_updates') }}">Country Updates</a>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
