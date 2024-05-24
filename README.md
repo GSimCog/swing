@@ -29,7 +29,7 @@ This App is a comprehensive tool designed to test and improve your knowledge of 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/GSimCog/infosage.git
-   cd country-quiz-app
+   cd infosage
 
 2. **Create a virtual environment**:
     ```bash
