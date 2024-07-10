@@ -1,4 +1,4 @@
-![Infosage image](https://github.com/GSimCog/infosage/extra/animated.gif?raw=true)
+![Infosage image](https://github.com/GSimCog/infosage/blob/main/extra/animated.gif?raw=true)
 
 # infosage
 
