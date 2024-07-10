@@ -2,6 +2,11 @@
 
 This App is a comprehensive tool designed to test and improve your knowledge of countries around the world. The app presents questions about capitals, flags, populations, continents, highest points, and currencies. Additionally, the national anthem of the country in question is played to enhance the user experience. The data for the quiz is sourced from semantic databases such as Wikidata and DBpedia.
 
+## Authors
+This research is conducted by a student and a professor from the Instituto Federal do Rio de Janeiro, Brazil.
+- **Wagner Luis Cardozo Gomes de Freitas (student)**
+- **Jose Ricardo da Silva Junior (research professor and supervisor)**
+
 ## Features
 
 - **User Authentication**: Users can register, log in, and view their scores.
@@ -15,6 +20,7 @@ This App is a comprehensive tool designed to test and improve your knowledge of 
 - `app.py`: Main application file containing the logic for the app.
 - `data_update.py`: Script for updating country data from semantic databases.
 - `requirements.txt`: List of Python dependencies required for the app.
+- `quiz.config`: The app configuration file.
 - HTML Templates:
   - `country_updates.html`: Template for displaying country updates.
   - `login.html`: Template for the login page.
@@ -65,6 +71,7 @@ This App is a comprehensive tool designed to test and improve your knowledge of 
 infosage/
 ├── app.py
 ├── data_update.py
+├── quiz.config
 ├── requirements.txt
 ├── templates/
 │   ├── country_updates.html
@@ -81,5 +88,5 @@ infosage/
    This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md). See the LICENSE file for more details.
 
 ## Acknowledgments
-   - Data sources: Wikidata, DBpedia
-   - Frontend framework: Simple.css
+   - Data sources: [Wikidata](https://www.wikidata.org/), [DBpedia](https://www.dbpedia.org/)
+   - Frontend framework: [Simple.css](https://simplecss.org/)
