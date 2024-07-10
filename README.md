@@ -1,3 +1,5 @@
+![Infosage image](https://github.com/GSimCog/infosage/extra/animated.gif?raw=true)
+
 # infosage
 
 This App is a comprehensive tool designed to test and improve your knowledge of countries around the world. The app presents questions about capitals, flags, populations, continents, highest points, and currencies. Additionally, the national anthem of the country in question is played to enhance the user experience. The data for the quiz is sourced from semantic databases such as Wikidata and DBpedia.
@@ -90,3 +92,4 @@ infosage/
 ## Acknowledgments
    - Data sources: [Wikidata](https://www.wikidata.org/), [DBpedia](https://www.dbpedia.org/)
    - Frontend framework: [Simple.css](https://simplecss.org/)
+   - [Instituto Federal do Rio de Janeiro](https://www.ifrj.edu.br/)
