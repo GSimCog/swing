@@ -126,9 +126,9 @@ Open issues or pull requests to suggest improvements!
 
 ---
 
-![swing image 01](https://github.com/GSimCog/swing/blob/main/extra/img01.png?raw=true)
-![swing image 02](https://github.com/GSimCog/swing/blob/main/extra/img02.png?raw=true)
-![swing image 03](https://github.com/GSimCog/swing/blob/main/extra/img03.png?raw=true)
-![swing image 04](https://github.com/GSimCog/swing/blob/main/extra/img04.png?raw=true)
-![swing image 05](https://github.com/GSimCog/swing/blob/main/extra/img05.png?raw=true)
-![swing image 06](https://github.com/GSimCog/swing/blob/main/extra/img06.png?raw=true)
+![swing image 01](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img01.png?raw=true)
+![swing image 02](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img02.png?raw=true)
+![swing image 03](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img03.png?raw=true)
+![swing image 04](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img04.png?raw=true)
+![swing image 05](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img05.png?raw=true)
+![swing image 06](https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img06.png?raw=true)
