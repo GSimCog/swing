@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+  <title>Admin Tools</title>
+  <style>
+    .admin-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin-bottom: 1em;
+    }
+    .admin-actions button {
+      flex: 1 1 180px;
+      min-width: 140px;
+      font-size: 1em;
+      padding: 0.7em 1.2em;
+      cursor: pointer;
+    }
+    #log-output {
+      width: 100%;
+      min-height: 160px;
+      font-family: monospace;
+      font-size: 1em;
+      margin-top: 1em;
+      resize: vertical;
+    }
+    @media (max-width: 700px) {
+      .admin-actions {
+        flex-direction: column;
+      }
+      .admin-actions button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Admin: Manual Updates</h2>
+  <div class="admin-actions">
+    <button onclick="runUpdate('update_new_country_data')">Update new countries</button>
+    <button onclick="runUpdate('update_blanks_with_ai')">Update blanks via AI</button>
+    <button onclick="runUpdate('update_reported_questions_with_ai')">Update reported questions via AI</button>
+    <button onclick="runUpdate('update_approved_questions')">Propagate approved questions</button>
+    <button onclick="runUpdate('update_approved_blanks')">Propagate approved blanks</button>
+    <button onclick="runUpdate('reload_quiz_data')">Reload Quiz Data</button>
+  </div>
+  <textarea id="log-output" readonly placeholder="Execution output will appear here..."></textarea>
+  <a href="/" class="back-btn" style="display:inline-block;margin-bottom:1em;padding:0.5em 1.2em;background:#333;color:#fff;border-radius:5px;text-decoration:none;font-weight:bold;">&larr; Back</a>
+  <script>
+    const logOutput = document.getElementById('log-output');
+    function runUpdate(action) {
+      logOutput.value = "Executando... Isso pode levar alguns minutos.";
+      fetch(`/admin/run_update/${action}`, {method: 'POST'})
+        .then(res => res.json())
+        .then(data => {
+          logOutput.value = data.output;
+        })
+        .catch(e => {
+          logOutput.value = 'Erro: ' + e;
+        });
+    }
+  </script>
+</body>
+</html>

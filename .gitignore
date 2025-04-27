@@ -1,0 +1,45 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database files
+quiz.db
+other_files/*.db
+
+# Temporary and analysis files
+other_files/*.json
+other_files/*.html
+other_files/*.db
+other_files/*.py
+
+# Logs and temp files
+*.log
+*.tmp
+
+# VSCode settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+
+# Uploads (if used)
+uploads/
+
+# Environment/config files (untracked secrets)
+.env
+quiz.config
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# macOS system files
+.AppleDouble
+.LSOverride
