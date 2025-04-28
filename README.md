@@ -129,6 +129,6 @@ Open issues or pull requests to suggest improvements!
 <img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img01.png" width="300">
 <img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img02.png" width="300">
 <img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img03.png" width="300">
-<img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img04.png" width="800">
-<img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img05.png" width="300">
+<img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img04.png" width="900">
+<img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img05.png" width="1600">
 <img src="https://github.com/GSimCog/swing/blob/release/1.0-beta/extra/img06.png" width="300">
