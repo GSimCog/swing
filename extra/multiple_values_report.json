@@ -1,0 +1,632 @@
+[
+  {
+    "country": "New Zealand",
+    "key": "continent_label",
+    "value": "Australian continent or Oceania or Insular Oceania",
+    "separator_count": 2
+  },
+  {
+    "country": "New Zealand",
+    "key": "official_Language_label",
+    "value": "English or Māori or New Zealand Sign Language",
+    "separator_count": 2
+  },
+  {
+    "country": "Tuvalu",
+    "key": "currency_label",
+    "value": "Australian dollar or Tuvaluan dollar",
+    "separator_count": 1
+  },
+  {
+    "country": "Tuvalu",
+    "key": "continent_label",
+    "value": "Insular Oceania or Oceania",
+    "separator_count": 1
+  },
+  {
+    "country": "Tuvalu",
+    "key": "official_Language_label",
+    "value": "Tuvaluan or English",
+    "separator_count": 1
+  },
+  {
+    "country": "El Salvador",
+    "key": "currency_label",
+    "value": "United States dollar or bitcoin",
+    "separator_count": 1
+  },
+  {
+    "country": "Fiji",
+    "key": "official_Language_label",
+    "value": "English or iTaukei or Hindi",
+    "separator_count": 2
+  },
+  {
+    "country": "Kiribati",
+    "key": "capital_label",
+    "value": "Tarawa or South Tarawa",
+    "separator_count": 1
+  },
+  {
+    "country": "Kiribati",
+    "key": "currency_label",
+    "value": "Kiribati dollar or Australian dollar",
+    "separator_count": 1
+  },
+  {
+    "country": "Kiribati",
+    "key": "continent_label",
+    "value": "Oceania or Insular Oceania",
+    "separator_count": 1
+  },
+  {
+    "country": "Kiribati",
+    "key": "official_Language_label",
+    "value": "English or Gilbertese",
+    "separator_count": 1
+  },
+  {
+    "country": "India",
+    "key": "official_Language_label",
+    "value": "Hindi or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Haiti",
+    "key": "official_Language_label",
+    "value": "Haitian Creole or French",
+    "separator_count": 1
+  },
+  {
+    "country": "Timor-Leste",
+    "key": "currency_label",
+    "value": "East Timor centavo coins or United States dollar",
+    "separator_count": 1
+  },
+  {
+    "country": "Timor-Leste",
+    "key": "official_Language_label",
+    "value": "Tetum or Portuguese",
+    "separator_count": 1
+  },
+  {
+    "country": "Tonga",
+    "key": "official_Language_label",
+    "value": "Tongan or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Panama",
+    "key": "currency_label",
+    "value": "United States dollar or Panamanian balboa",
+    "separator_count": 1
+  },
+  {
+    "country": "Panama",
+    "key": "continent_label",
+    "value": "North America or South America",
+    "separator_count": 1
+  },
+  {
+    "country": "Vanuatu",
+    "key": "official_Language_label",
+    "value": "Bislama or English or French",
+    "separator_count": 2
+  },
+  {
+    "country": "Pakistan",
+    "key": "official_Language_label",
+    "value": "Urdu or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Paraguay",
+    "key": "official_Language_label",
+    "value": "Spanish or Guarani",
+    "separator_count": 1
+  },
+  {
+    "country": "Samoa",
+    "key": "official_Language_label",
+    "value": "Samoan or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Bolivia",
+    "key": "capital_label",
+    "value": "La Paz or Sucre",
+    "separator_count": 1
+  },
+  {
+    "country": "Bolivia",
+    "key": "determination_method_label",
+    "value": "de facto or de jure",
+    "separator_count": 1
+  },
+  {
+    "country": "Bolivia",
+    "key": "official_Language_label",
+    "value": "Spanish or Quechua or Aymara or Guarani or other indigenous languages",
+    "separator_count": 4
+  },
+  {
+    "country": "Papua New Guinea",
+    "key": "official_Language_label",
+    "value": "Tok Pisin or English or Hiri Motu",
+    "separator_count": 2
+  },
+  {
+    "country": "Sri Lanka",
+    "key": "capital_label",
+    "value": "Colombo or Sri Jayawardenepura Kotte",
+    "separator_count": 1
+  },
+  {
+    "country": "Sri Lanka",
+    "key": "determination_method_label",
+    "value": "de facto or de jure",
+    "separator_count": 1
+  },
+  {
+    "country": "Sri Lanka",
+    "key": "official_Language_label",
+    "value": "Sinhala or Tamil",
+    "separator_count": 1
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "key": "continent_label",
+    "value": "Oceania or Insular Oceania",
+    "separator_count": 1
+  },
+  {
+    "country": "South Africa",
+    "key": "capital_label",
+    "value": "Bloemfontein or Cape Town or Pretoria",
+    "separator_count": 2
+  },
+  {
+    "country": "South Africa",
+    "key": "official_Language_label",
+    "value": "Afrikaans or English or isiNdebele or isiXhosa or isiZulu or Sesotho or Setswana or siSwati or Tshivenda or Xitsonga",
+    "separator_count": 9
+  },
+  {
+    "country": "Maldives",
+    "key": "highest_point_label",
+    "value": "Villingili or Addu City",
+    "separator_count": 1
+  },
+  {
+    "country": "South Korea",
+    "key": "currency_label",
+    "value": "Korean mun or won",
+    "separator_count": 1
+  },
+  {
+    "country": "Yemen",
+    "key": "capital_label",
+    "value": "Aden or Sanaa",
+    "separator_count": 1
+  },
+  {
+    "country": "Yemen",
+    "key": "determination_method_label",
+    "value": "de facto or de jure",
+    "separator_count": 1
+  },
+  {
+    "country": "Palau",
+    "key": "continent_label",
+    "value": "Oceania or Insular Oceania",
+    "separator_count": 1
+  },
+  {
+    "country": "Palau",
+    "key": "official_Language_label",
+    "value": "Palauan or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Peru",
+    "key": "official_Language_label",
+    "value": "Spanish or Quechua or Aymara",
+    "separator_count": 2
+  },
+  {
+    "country": "Suriname",
+    "key": "continent_label",
+    "value": "North America or South America",
+    "separator_count": 1
+  },
+  {
+    "country": "Algeria",
+    "key": "official_Language_label",
+    "value": "Arabic or Tamazight",
+    "separator_count": 1
+  },
+  {
+    "country": "Marshall Islands",
+    "key": "currency_label",
+    "value": "United States dollar or SOV",
+    "separator_count": 1
+  },
+  {
+    "country": "Marshall Islands",
+    "key": "official_Language_label",
+    "value": "Marshallese or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Solomon Islands",
+    "key": "continent_label",
+    "value": "Oceania or Insular Oceania",
+    "separator_count": 1
+  },
+  {
+    "country": "Chad",
+    "key": "official_Language_label",
+    "value": "French or Arabic",
+    "separator_count": 1
+  },
+  {
+    "country": "Nauru",
+    "key": "official_Language_label",
+    "value": "Nauruan or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Singapore",
+    "key": "official_Language_label",
+    "value": "Malay or Standard Chinese or English or Tamil",
+    "separator_count": 3
+  },
+  {
+    "country": "Sweden",
+    "key": "anthem_audio",
+    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Du%20gamla%2C%20du%20fria.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Sweden.ogg",
+    "separator_count": 1
+  },
+  {
+    "country": "Eritrea",
+    "key": "official_Language_label",
+    "value": "Tigrinya or Arabic or English",
+    "separator_count": 2
+  },
+  {
+    "country": "Iraq",
+    "key": "official_Language_label",
+    "value": "Arabic or Kurdish",
+    "separator_count": 1
+  },
+  {
+    "country": "Morocco",
+    "key": "population",
+    "value": "36828330 or 37076584",
+    "separator_count": 1
+  },
+  {
+    "country": "Morocco",
+    "key": "official_Language_label",
+    "value": "Arabic or Standard Moroccan Amazigh",
+    "separator_count": 1
+  },
+  {
+    "country": "Comoros",
+    "key": "official_Language_label",
+    "value": "Comorian or Arabic or French",
+    "separator_count": 2
+  },
+  {
+    "country": "Philippines",
+    "key": "official_Language_label",
+    "value": "Filipino or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Kingdom of Denmark",
+    "key": "currency_label",
+    "value": "Danish krone or Faroese króna",
+    "separator_count": 1
+  },
+  {
+    "country": "Kingdom of Denmark",
+    "key": "anthem_audio",
+    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Kong%20Kristian%20stod%20ved%20h%C3%B8jen%20mast.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/Der%20er%20et%20yndigt%20land%2C%20Hans%20Ernst%20Kr%C3%B8yer%2C%20Erik%20Damskier%2C%202009-09-30.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Der%20er%20et%20yndigt%20land.ogg",
+    "separator_count": 2
+  },
+  {
+    "country": "South Sudan",
+    "key": "official_Language_label",
+    "value": "English or Arabic",
+    "separator_count": 1
+  },
+  {
+    "country": "Brunei",
+    "key": "official_Language_label",
+    "value": "Malay or British English",
+    "separator_count": 1
+  },
+  {
+    "country": "State of Palestine",
+    "key": "capital_label",
+    "value": "Ramallah or Jerusalem",
+    "separator_count": 1
+  },
+  {
+    "country": "State of Palestine",
+    "key": "determination_method_label",
+    "value": "de facto or de jure",
+    "separator_count": 1
+  },
+  {
+    "country": "Vatican City",
+    "key": "official_Language_label",
+    "value": "Latin or Italian",
+    "separator_count": 1
+  },
+  {
+    "country": "Afghanistan",
+    "key": "official_Language_label",
+    "value": "Dari or Pashto",
+    "separator_count": 1
+  },
+  {
+    "country": "Central African Republic",
+    "key": "official_Language_label",
+    "value": "French or Sango",
+    "separator_count": 1
+  },
+  {
+    "country": "Tanzania",
+    "key": "official_Language_label",
+    "value": "Swahili or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Madagascar",
+    "key": "official_Language_label",
+    "value": "Malagasy or French",
+    "separator_count": 1
+  },
+  {
+    "country": "Equatorial Guinea",
+    "key": "official_Language_label",
+    "value": "Spanish or French or Portuguese",
+    "separator_count": 2
+  },
+  {
+    "country": "Sudan",
+    "key": "official_Language_label",
+    "value": "Arabic or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Seychelles",
+    "key": "official_Language_label",
+    "value": "Seychellois Creole or English or French",
+    "separator_count": 2
+  },
+  {
+    "country": "Luxembourg",
+    "key": "official_Language_label",
+    "value": "Luxembourgish or French or German",
+    "separator_count": 2
+  },
+  {
+    "country": "Djibouti",
+    "key": "official_Language_label",
+    "value": "French or Arabic",
+    "separator_count": 1
+  },
+  {
+    "country": "Namibia",
+    "key": "currency_label",
+    "value": "rand or Namibian dollar",
+    "separator_count": 1
+  },
+  {
+    "country": "France",
+    "key": "anthem_audio",
+    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Chaliapine%20-%20Rouget%20de%20Lisle%20-%20La%20Marseillaise.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/La%20Marseillaise.ogg",
+    "separator_count": 1
+  },
+  {
+    "country": "France",
+    "key": "currency_label",
+    "value": "euro or CFP Franc",
+    "separator_count": 1
+  },
+  {
+    "country": "Eswatini",
+    "key": "capital_label",
+    "value": "Mbabane or Lobamba",
+    "separator_count": 1
+  },
+  {
+    "country": "Eswatini",
+    "key": "determination_method_label",
+    "value": "de jure or de facto",
+    "separator_count": 1
+  },
+  {
+    "country": "Eswatini",
+    "key": "official_Language_label",
+    "value": "Swazi or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Kenya",
+    "key": "official_Language_label",
+    "value": "Swahili or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Zimbabwe",
+    "key": "currency_label",
+    "value": "euro or rand or renminbi or yen or Australian dollar or pound sterling or Zimbabwean dollar or United States dollar or Indian rupee",
+    "separator_count": 8
+  },
+  {
+    "country": "Zimbabwe",
+    "key": "official_Language_label",
+    "value": "Chewa or Chibarwe or English or Kalanga or Koisan or Nambya or Ndau or Ndebele or Shangani or Shona or Sotho or Tonga or Tswana or Venda or Xhosa or Zimbabwean Sign Language",
+    "separator_count": 15
+  },
+  {
+    "country": "Cameroon",
+    "key": "official_Language_label",
+    "value": "English or French",
+    "separator_count": 1
+  },
+  {
+    "country": "Kingdom of the Netherlands",
+    "key": "official_Language_label",
+    "value": "Dutch or Frisian",
+    "separator_count": 1
+  },
+  {
+    "country": "Rwanda",
+    "key": "official_Language_label",
+    "value": "Kinyarwanda or French or English or Swahili",
+    "separator_count": 3
+  },
+  {
+    "country": "Malawi",
+    "key": "official_Language_label",
+    "value": "English or Chichewa",
+    "separator_count": 1
+  },
+  {
+    "country": "Belarus",
+    "key": "official_Language_label",
+    "value": "Belarusian or Russian",
+    "separator_count": 1
+  },
+  {
+    "country": "People's Republic of China",
+    "key": "anthem_audio",
+    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E7%89%88%EF%BC%89.wav",
+    "separator_count": 3
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "key": "official_Language_label",
+    "value": "Bosnian or Croatian or Serbian",
+    "separator_count": 2
+  },
+  {
+    "country": "Canada",
+    "key": "official_Language_label",
+    "value": "English or French",
+    "separator_count": 1
+  },
+  {
+    "country": "Lesotho",
+    "key": "currency_label",
+    "value": "loti or rand",
+    "separator_count": 1
+  },
+  {
+    "country": "Lesotho",
+    "key": "official_Language_label",
+    "value": "Sesotho or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Kazakhstan",
+    "key": "official_Language_label",
+    "value": "Kazakh or Russian",
+    "separator_count": 1
+  },
+  {
+    "country": "Norway",
+    "key": "official_Language_label",
+    "value": "Norwegian or Sami",
+    "separator_count": 1
+  },
+  {
+    "country": "Somalia",
+    "key": "official_Language_label",
+    "value": "Somali or Arabic",
+    "separator_count": 1
+  },
+  {
+    "country": "Finland",
+    "key": "official_Language_label",
+    "value": "Finnish or Swedish",
+    "separator_count": 1
+  },
+  {
+    "country": "Ireland",
+    "key": "official_Language_label",
+    "value": "Irish or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Cyprus",
+    "key": "official_Language_label",
+    "value": "Greek or Turkish",
+    "separator_count": 1
+  },
+  {
+    "country": "Mauritius",
+    "key": "official_Language_label",
+    "value": "English or French",
+    "separator_count": 1
+  },
+  {
+    "country": "Belgium",
+    "key": "official_Language_label",
+    "value": "Dutch or French or German",
+    "separator_count": 2
+  },
+  {
+    "country": "Togo",
+    "key": "official_Language_label",
+    "value": "French or Ewe or Kabiye",
+    "separator_count": 2
+  },
+  {
+    "country": "Czech Republic",
+    "key": "anthem_audio",
+    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20m%C5%AFj.mid or http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20muj.ogg",
+    "separator_count": 1
+  },
+  {
+    "country": "Switzerland",
+    "key": "official_Language_label",
+    "value": "German or French or Italian or Romansh",
+    "separator_count": 3
+  },
+  {
+    "country": "North Macedonia",
+    "key": "official_Language_label",
+    "value": "Macedonian or Albanian",
+    "separator_count": 1
+  },
+  {
+    "country": "Botswana",
+    "key": "official_Language_label",
+    "value": "English or Setswana",
+    "separator_count": 1
+  },
+  {
+    "country": "Uganda",
+    "key": "official_Language_label",
+    "value": "English or Swahili",
+    "separator_count": 1
+  },
+  {
+    "country": "Malta",
+    "key": "official_Language_label",
+    "value": "Maltese or English",
+    "separator_count": 1
+  },
+  {
+    "country": "Burundi",
+    "key": "official_Language_label",
+    "value": "Kirundi or French or English",
+    "separator_count": 2
+  }
+]

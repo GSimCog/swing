@@ -1,0 +1,2403 @@
+[
+  {
+    "country": "Jamaica",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Jamaica",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/%22Jamaica%2C%20Land%20We%20Love%22%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "New Zealand",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "New Zealand",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/God%20Defend%20New%20Zealand%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Grenada",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Grenada.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Grenada",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/HailGrenada.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Vietnam",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Vietnam",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Vietnamese%20Ti%E1%BA%BFn%20Qu%C3%A2n%20Ca.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tuvalu",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tuvalu.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "El Salvador",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20El%20Salvador.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "El Salvador",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/El%20Salvador%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Fiji",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Fiji",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Fiji%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ecuador",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ecuador.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ecuador",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anthem%20of%20Ecuador.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Liechtenstein",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Liechtenstein",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/God%20Save%20the%20King%20%281927%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kiribati",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Iran",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Iran",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Sorud-e%20Mell%C3%AD-e%20Yomhur%C3%AD-e%20Eslam%C3%AD-e%20Ir%C3%A1n%20%28instrumental%29.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "India",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20India.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "India",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Jana%20Gana%20Mana%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Haiti",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Haiti.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Haiti",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Haiti%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Timor-Leste",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Timor-Leste",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/East%20Timorese%20national%20anthem.wav",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tonga",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saint Lucia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Lucia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saint Lucia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Saint%20Lucia.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Panama",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Panama",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Vanuatu",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Vanuatu.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Vanuatu",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Yumi%2C%20Yumi%2C%20Yumi.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Myanmar",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Myanmar",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/U.S.%20Navy%20Band%20-%20Kaba%20Ma%20Kyei.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Australia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Australia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Advance%20Australia%20Fair%20%281927%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Pakistan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Pakistan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Pakistani%20national%20anthem%20-%20United%20States%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Paraguay",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Paraguay.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Paraguay",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Paraguayan%20National%20Anthem.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Samoa",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bolivia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bolivia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20de%20Bolivia%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bahrain",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bahrain.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bahrain",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Bahrainona%20%28vocal%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Papua New Guinea",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cambodia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cambodia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Nokoreach.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kuwait",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kuwait.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Chile",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20National%20Anthem%20of%20Chile.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sri Lanka",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sri Lanka",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lankan%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mongolia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Micronesia%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Dominica",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Dominica.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Dominica",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Dominica%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Africa",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Africa",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/South%20African%20national%20anthem.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nicaragua",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nicaragua",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Nicaragua%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "The Bahamas",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Bahamas.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "The Bahamas",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Bahamas.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Maldives",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Maldives.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Maldives",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaumii%20salaam.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nepal",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Saint_Kitts_and_Nevis.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20O%20Land%20of%20Beauty.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Korea",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Korea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Korea",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20South%20Korea%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Yemen",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Yemen",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20United%20Republic.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Costa Rica",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Costa%20Rica.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uzbekistan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uzbekistan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Uzbekistan%20anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Dominican Republic",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Dominican%20Republic%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guyana",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guyana",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Guyana.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Qatar",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Qatar",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Qatar.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "North Korea",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tajikistan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tajikistan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tajikistan%20anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Laos",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Laos.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Turkmenistan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Turkmenistan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Turkmenistan%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Honduras",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Honduras.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Honduras",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Honduras%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Thailand",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Thailand",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Thai%20National%20Anthem%20-%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guatemala",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guatemala",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Guatemala%2C%20by%20the%20U.S.%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Palau",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Taiwan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Republic%20of%20China.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Taiwan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Republic%20of%20China%20%28Taiwan%29%20%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%AD%8C%28%E6%BC%94%E5%A5%8F%E7%89%88%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Peru",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Peru.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Peru",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Marcha%20Nacional%20del%20Per%C3%BA.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Colombia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Colombia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20%C2%A1Oh%2C%20gloria%20inmarcesible%21.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Argentina",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Argentina.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Argentina",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20Argentino%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Suriname",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Suriname",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Surinamese%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Algeria",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Algeria",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kassaman%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Marshall Islands",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Marshall%20Islands%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Armenia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Armenia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mer%20Hayrenik%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Solomon Islands",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_the_Solomon_Islands.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Serbia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Serbia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Serbia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Serbian%20national%20anthem%2C%20instrumental.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Flag_of_Saint_Vincent_and_the_Grenadines.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Saint%20Vincent%20and%20the%20Grenadines%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Venezuela",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Venezuela.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Venezuela",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Gloria%20al%20Bravo%20Pueblo%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Chad",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Chad",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Tchadienne%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nauru",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nauru",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nauru%20Bwiema.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Singapore",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sweden",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sweden",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Du%20gamla%2C%20du%20fria.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Sweden.ogg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Russia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Russia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Russian%20Anthem%20chorus.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Barbados",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Barbados.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Barbados",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Barbados.mid",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Eritrea",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Eritrea",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Eritrea%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Egypt",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Egypt.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Egypt",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Bilady%2C%20Bilady%2C%20Bilady.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Iraq",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iraq.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Poland",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Poland.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Poland",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mazurek%20D%C4%85browskiego%20%28official%20instrumental%29.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Montenegro",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Montenegro",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Montenegro.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malaysia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malaysia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malaysia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Negaraku%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Morocco",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Morocco",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Morocco.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Comoros",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Comoros.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Comoros",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Comoros%2C%20performed%20by%20the%20U.S.%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "United Kingdom",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Kingdom%20%283-5%29.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bhutan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cuba",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cuba",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Bayamesa%20%281945%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "United States",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20States.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "United States",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Star%20Spangled%20Banner%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Philippines",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Philippines.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Philippines",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Lupang%20Hinirang%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kingdom of Denmark",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Denmark.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kingdom of Denmark",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Kong%20Kristian%20stod%20ved%20h%C3%B8jen%20mast.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/Der%20er%20et%20yndigt%20land%2C%20Hans%20Ernst%20Kr%C3%B8yer%2C%20Erik%20Damskier%2C%202009-09-30.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Der%20er%20et%20yndigt%20land.ogg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Moldova",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Sudan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "South Sudan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/South%20Sudan%20Oyee%21%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Israel",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Israel",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hatikvah%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Brunei",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brunei.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Brunei",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Allah%20Peliharakan%20Sultan.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Antigua%20and%20Barbuda%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Syria",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Syria%20%282025-%29%20%28stars%20variant%29.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Syria",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Syria.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "State of Palestine",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "State of Palestine",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Anthem%20of%20Palestine.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Vatican City",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vatican%20City%20%282023%E2%80%93present%29.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Vatican City",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Inno%20e%20Marcia%20Pontificale.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belize",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belize",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Land%20of%20the%20Free%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Libya",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Libya.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Libya",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Libya%2C%20Libya%2C%20Libya%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saudi Arabia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saudi%20Arabia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Saudi Arabia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Saudi%20Arabian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Afghanistan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Taliban.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Jordan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Jordan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Jordan%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mali",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mali",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Malian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bangladesh",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bangladesh",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Amar%20Sonar%20Bangla%20-%20official%20vocal%20music%20of%20the%20National%20anthem%20of%20Bangladesh.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Brazil",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brazil.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Brazil",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hino-Nacional-Brasil-instrumental-mec.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mauritania",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mauritania.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Oman",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Oman.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Oman",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Peace%20to%20the%20Sultan%20%28%D9%86%D8%B4%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kyrgyzstan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kyrgyzstan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kyrgyzstan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kyrgyzstan%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "German Empire",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Heil%20dir%20im%20Siegerkranz%20%28Historische%20Aufnahme%20Oktober%201901%29.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Central African Republic",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Lebanon",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Lebanon",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Lebanese%20national%20anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Spain",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Spain.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Spain",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcha%20Real-Royal%20March%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Indonesia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tanzania",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tanzania",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tanzanian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Slovenia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Slovenia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Slovenia%27s%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tunisia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tunisia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Tunisia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Humat%20al-Hima.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Liberia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Liberia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Liberia%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Madagascar",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Madagascar",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ry%20Tanindrazanay%20malala%20%C3%B4%21%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Equatorial Guinea",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Equatorial%20Guinea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Equatorial Guinea",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Equatorial%20Guinea%27s%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Japan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Japan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kimi%20ga%20Yo%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sudan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sudan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Sudan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Sudanese%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Seychelles",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Seychelles.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Seychelles",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Koste%20Seselwa%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ukraine",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Luxembourg",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Luxembourg.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Luxembourg",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Luxembourg%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Djibouti",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Djibouti",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Djibouti%20anthem%20Somali%20lyrics.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Italy",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Italy.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Italy",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Inno%20di%20Mameli%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Monaco",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Monaco",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Monaco%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Turkey",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Turkey",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Istikl%C3%A2l%20Marsi%20instrumetal.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Greece",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Greece",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hymn%20to%20liberty%20instrumental.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Namibia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Andorra",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/El%20Gran%20Carlemany.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "France",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20France.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "France",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Chaliapine%20-%20Rouget%20de%20Lisle%20-%20La%20Marseillaise.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/La%20Marseillaise.ogg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Eswatini",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Eswatini",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Kingdom%20of%20Eswatini.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Latvia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/84/Flag_of_Latvia.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Latvia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Latvian%20National%20Anthem.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mozambique",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mozambique",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mozambican%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Zambia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zambia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Zambia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Zambian%20national%20anthem.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kenya",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kenya",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Kenya%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Hungary",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Hungary.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Hungary",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Himnusz%201920s.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Zimbabwe",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zimbabwe.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Germany",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Germany",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Germany%20-%20U.S.%20Army%201st%20Armored%20Division%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Azerbaijan",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Azerbaijan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Azerbaijan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Azerbaijan%20national%20anthem%20%28vocal%20version%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cameroon",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Croatia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Croatia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Croatia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Lijepa%20nasa%20domovino%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Romania",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Romania.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Romania",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Desteapta-te%2C%20romane%21.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cape Verde",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cape%20Verde.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cape Verde",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A2ntico%20da%20Liberdade%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Democratic%20Republic%20of%20the%20Congo.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kingdom of the Netherlands",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kingdom of the Netherlands",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelmus%20koor.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uruguay",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uruguay",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/HimnoNacionalUruguay.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bulgaria",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Bulgaria",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mila%20Rodino.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Georgia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Georgia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tavisupleba%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Rwanda",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Rwanda.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Rwanda",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hymne%20National%20du%20Rwanda.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malawi",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malawi.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malawi",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Malawian%20national%20anthem.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belarus",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belarus.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belarus",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/My%20Belarusy.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guinea",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guinea",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Guinea%20by%20US%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Burkina Faso",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "People's Republic of China",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_China.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "People's Republic of China",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E7%89%88%EF%BC%89.wav",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ethiopia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ethiopia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ethiopia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Wedefit%20Gesgeshi%20Widd%20Innat%20Ittyoppya.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Canada",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Canada%20%28Pantone%29.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Canada",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20O%20Canada.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Senegal",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Senegal",
+    "asset_type": "anthem_audio",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/National_Anthem_of_Senegal.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Lesotho",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lesotho.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kazakhstan",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Kazakhstan",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kazakhstan%20National%20Anthem%202012.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Norway",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Norway",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Norway%20%28National%20Anthem%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Somalia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Somalia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Somali%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Finland",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Finland",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Maamme.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Iceland",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iceland.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Iceland",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Lofs%C3%B6ngur%20%28first%20recording%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Gabon",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Gabon.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Gabon",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Concorde.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ivory Coast",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Cote_d%27Ivoire.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Benin",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Benin",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/L%27Aube%20Nouvelle.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ireland",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ireland",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ireland%20National%20Anthem%20%28Amhr%C3%A1n%20na%20bhFiann%29%201960s.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Estonia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Estonia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Mu%20isamaa%2C%20mu%20%C3%B5nn%20ja%20r%C3%B5%C3%B5m%20%28first%20vocal%20recording%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cyprus",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cyprus.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Cyprus",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hymn%20to%20liberty%20instrumental.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Albania",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Albania.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Albania",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Hymni%20i%20Flamurit%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Slovakia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Slovakia",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nad%20Tatrou%20sa%20bl%C3%BDska.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mauritius",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Flag_of_Mauritius.svg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Mauritius",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Motherland%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ghana",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ghana.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Ghana",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Ghana.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Republic of the Congo",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Republic of the Congo",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Republic%20of%20the%20Congo.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "San Marino",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20San%20Marino.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "San Marino",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Inno%20Nazionale%20della%20Repubblica.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mexico",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mexico.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Mexico",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20Mexicano%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Austria",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Austria.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Austria",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Land%20der%20Berge%20Land%20am%20Strome%20instrumental.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Portugal",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Portugal.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Portugal",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/A%20Portuguesa.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belgium",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belgium.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Belgium",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Braban%C3%A7onne.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Togo",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Togo%20%283-2%29.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Niger",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Niger",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/THE%20HONOR%20OF%20THE%20FATHERLAND.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Czech Republic",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Czech Republic",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20m%C5%AFj.mid or http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20muj.ogg",
+    "status": "HTTP 404",
+    "http_code": 404
+  },
+  {
+    "country": "Lithuania",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lithuania.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Lithuania",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Tauti%C5%A1ka%20giesme%20instrumental.oga",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Switzerland",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Switzerland.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Switzerland",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Swiss%20Psalm%20%28official%20vocal%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "North Macedonia",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Macedonia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Botswana",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Botswana",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Fatshe%20leno%20la%20rona.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uganda",
+    "asset_type": "flag_image",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Uganda",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Ugandan%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malta",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Malta",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Malta%20anthem%20%28instrumental%29.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Burundi",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nigeria",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Nigeria",
+    "asset_type": "anthem_audio",
+    "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Nigeria%20We%20Hail%20Thee.ogg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "The Gambia",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg",
+    "status": "OK",
+    "http_code": 200
+  },
+  {
+    "country": "Guinea-Bissau",
+    "asset_type": "flag_image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg",
+    "status": "OK",
+    "http_code": 200
+  }
+]

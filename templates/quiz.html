@@ -15,7 +15,13 @@
         margin-left: auto;
         margin-right: auto;
         width: 300px;
-        height: auto;
+        height: 200px;
+        object-fit: contain;
+        min-width: 300px;
+        min-height: 200px;
+        background: transparent;
+        border: 1.5px solid transparent;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       }
 
       .audio-default {
@@ -45,16 +51,14 @@
       {% endfor %}
       <br />
       <input type="submit" value="Next question" />
-      <div class="right-align">
-        <input type="submit" name="wrong_answers" value="Report errors" />
-      </div>
+      <!--<div class="right-align">
+        <input type="submit" name="wrong_answers" value="Report error" />
+      </div>-->
     </form>
     <a href="{{ url_for('logout') }}">Logout</a>
     {% if current_user.is_authenticated and current_user.username == 'admin' %}
     <div class="admin-links">
-      <form action="{{ url_for('reload_country_quiz') }}" method="POST">
-        <button type="submit">Reload Quiz Data</button>
-      </form>
+      
       {% endif %} {% if current_user.is_authenticated and current_user.username
       == 'admin' %}
       <div class="admin-links">
@@ -64,6 +68,9 @@
       == 'admin' %}
       <div class="admin-links">
         <a href="{{ url_for('country_updates') }}">Country Updates</a>
+      </div>
+      <div class="admin-links">
+        <a href="{{ url_for('admin_tools') }}">Admin Tools</a>
       </div>
       {% endif %}
     </div>

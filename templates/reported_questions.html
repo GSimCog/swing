@@ -12,6 +12,7 @@
       <thead>
         <tr>
           <th>ID</th>
+          <th>Country</th>
           <th>Question</th>
           <th>Current answer</th>
           <th>Answer from OpenAI API</th>
@@ -22,9 +23,31 @@
         {% for question in reported_questions %}
         <tr>
           <td>{{ question.id }}</td>
+          <td>{{ question.country }}</td>
           <td>{{ question.question }}</td>
-          <td>{{ question.correct_answer }}</td>
-          <td>{{ question.value_from_ai }}</td>
+          <td>
+            {% if question.correct_answer and question.correct_answer.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) %}
+              {% set img_path = question.correct_answer %}
+              {% if 'no_flag.png' in img_path %}
+                <img src="{{ url_for('static', filename='images/no_flag.png') }}" alt="Image" style="max-width: 64px; max-height: 40px;">
+              {% else %}
+                <img src="{{ img_path if img_path.startswith('http') or img_path.startswith('/static/') else '/static/' + img_path.lstrip('./') }}" alt="Image" style="max-width: 64px; max-height: 40px;">
+              {% endif %}
+            {% else %}
+              {{ question.correct_answer }}
+            {% endif %}
+          </td>
+          <td>
+            {% if question.value_from_ai and question.value_from_ai.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) %}
+              <img src="{{ question.value_from_ai }}" alt="Image" style="max-width: 64px; max-height: 40px;">
+            {% else %}
+              {%- if '|' in question.value_from_ai -%}
+                {{ question.value_from_ai.rsplit('|', 1)[0].strip() }}
+              {%- else -%}
+                {{ question.value_from_ai }}
+              {%- endif -%}
+            {% endif %}
+          </td>
           <td>
             <form
               action="{{ url_for('approve_question', question_id=question.id) }}"

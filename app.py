@@ -1,112 +1,275 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import login_required, current_user, LoginManager, login_user, logout_user, UserMixin
-from werkzeug.security import generate_password_hash, check_password_hash
-from datetime import datetime
-import random
-import requests
+"""
+Configuração e inicialização do aplicativo Flask, banco de dados e principais dependências.
+Inclui definição de modelos, rotas, autenticação e integração com ferramentas de atualização de dados do quiz.
+
+Todas as docstrings seguem padrão Google para facilitar manutenção e colaboração.
+"""
+
 import os
 import json
+import random
 import configparser
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.exc import IntegrityError
+import requests
+from flask import Flask, render_template, redirect, url_for, request, session, flash, jsonify
+import sys, io
+from data_update import update_new_country_data_from_semanticdatabase_in_countryQuiz, update_country_blanks_from_semanticdatabase_with_ai, update_reported_questions_with_ai, update_countryQuiz_from_approved_questions, update_countryQuiz_from_approved_blanks
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import sessionmaker, scoped_session
+from flask_login import UserMixin, LoginManager, login_user, login_required, logout_user, current_user
+from datetime import datetime
+from werkzeug.security import check_password_hash, generate_password_hash
+
+# Tipos de perguntas possíveis para o quiz
+OPTIONS = [
+    "flag_label",
+    "capital_label",
+    "official_Language_label",
+    "currency_label",
+    "population",
+    "continent_label",
+    "highest_point_label"
+]
+
 
 config = configparser.ConfigParser()
 config.read('quiz.config')
+DBPEDIA_SPARQL_QUERY = config.get('settings', 'dbpedia_sparql_query')
+WIKIDATA_SPARQL_QUERY = config.get('settings', 'wikidata_sparql_query')
 
-DATABASE = config.get('settings', 'database', fallback=os.getenv('DATABASE', 'WIKIDATA'))
-DBPEDIA_SPARQL_QUERY = config.get('settings', 'dbpedia_sparql_query', fallback=os.getenv('DBPEDIA_SPARQL_QUERY'))
-WIKIDATA_SPARQL_QUERY = config.get('settings', 'wikidata_sparql_query', fallback=os.getenv('WIKIDATA_SPARQL_QUERY'))
-OPENAI_API_KEY = config.get('settings', 'openai_api_key', fallback=os.getenv('OPENAI_API_KEY'))
+# Carregar configuração do banco de dados
+database = config.get('settings', 'database', fallback='WIKIDATA').upper()
 
-OPTIONS = ["capital_label", "currency_label",
-           "population", "flag_label", 
-           "official_Language_label", "continent_label", "highest_point_label"]
-
+# Criação do aplicativo Flask
 app = Flask(__name__)
+
+# Configuração da chave secreta do aplicativo
 app.config['SECRET_KEY'] = os.urandom(24)
+
+# Configuração da URI do banco de dados
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiz.db'
 
+# Inicialização do banco de dados SQLAlchemy
 db = SQLAlchemy(app)
+
+# Criação de uma fábrica de sessões para o banco de dados
 session_factory = sessionmaker(bind=db.engine)
+
+# Criação de uma sessão para o banco de dados
 Session = scoped_session(session_factory)
 
+"""
+Modelos de dados para o banco de dados SQLAlchemy.
+"""
+
 class User(UserMixin, db.Model):
-    """Modelo de usuário para o banco de dados SQLAlchemy."""
+    """
+    Modelo de usuário do sistema.
+
+    Atributos:
+        id (int): Identificador único do usuário.
+        username (str): Nome de usuário.
+        password (str): Senha do usuário (hash).
+        email (str): E-mail do usuário.
+        score (int): Pontuação acumulada.
+        timestamp (datetime): Data/hora de criação ou atualização.
+    """
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     score = db.Column(db.Integer, default=0)
-    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 class ReportedQuestion(db.Model):
-    """Modelo para perguntas reportadas no quiz."""
+    """
+    Modelo para perguntas reportadas ou sugestões da IA para revisão manual.
+
+    Atributos:
+        id (int): Identificador da questão reportada/sugestão.
+        user_id (int): ID do usuário que reportou ou 'ai' para sugestões automáticas.
+        user (User): Usuário associado.
+        question (str): Pergunta reportada ou campo sugerido.
+        country (str): País relacionado.
+        correct_answer (str): Resposta correta conhecida (se houver).
+        value_from_ai (str): Valor sugerido pela IA.
+        approved (bool): Se a sugestão foi aprovada manualmente.
+        value_updated (bool): Se a sugestão foi propagada ao quiz.
+        timestamp (datetime): Data/hora do registro.
+    """
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    user = db.relationship('User', backref=db.backref(
-        'reported_questions', lazy=True))
+    user = db.relationship('User', backref=db.backref('reported_questions', lazy=True))
     question = db.Column(db.String, nullable=False)
     country = db.Column(db.String, nullable=False)
-    correct_answer = db.Column(db.String, nullable=False)  # Resposta que o aplicativo diz ser a correta
+    correct_answer = db.Column(db.String, nullable=False)
     value_from_ai = db.Column(db.String(255), nullable=False)
     approved = db.Column(db.Boolean, nullable=False, default=False)
     value_updated = db.Column(db.Boolean, nullable=False, default=False)
-    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    
+    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+
 class CountryQuiz(db.Model):
-    """Modelo para quizzes relacionados a dados de países."""
+    """
+    Modelo para dados de quiz de países.
+
+    Atributos:
+        id (int): Identificador do quiz.
+        country_label (str): Nome/label do país.
+        data (str): Dados do país em JSON.
+        timestamp (datetime): Data/hora de criação ou atualização.
+    """
     id = db.Column(db.Integer, primary_key=True)
     country_label = db.Column(db.String(255), unique=True, nullable=False)
-    data = db.Column(db.Text, nullable=False)  # Dados JSON
-    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    data = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     def __repr__(self):
         return f'<CountryQuiz {self.country_label}>'
 
 class CountryFromSemanticDatabase(db.Model):
-    """Modelo para armazenar dados de países obtidos de bases de dados semânticas."""
+    """
+    Modelo para armazenar dados de países vindos de bases semânticas externas.
+
+    Atributos:
+        id (int): Identificador do país.
+        country_label (str): Nome/label do país.
+        data (str): Dados do país em JSON.
+        timestamp (datetime): Data/hora de criação ou atualização.
+    """
     id = db.Column(db.Integer, primary_key=True)
     country_label = db.Column(db.String(255), unique=True, nullable=False)
-    data = db.Column(db.Text, nullable=False)  # Dados JSON
-    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    data = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 class CountryBlanksFromSemanticDatabase(db.Model):
-    """Modelo para gerenciar lacunas de informação nos dados de países que podem ser preenchidas via IA."""
+    """
+    Modelo para gerenciar lacunas (blanks) nos dados de países, preenchidas via IA ou manualmente.
+
+    Atributos:
+        id (int): Identificador da lacuna.
+        country_label (str): Nome/label do país.
+        key (str): Campo da lacuna.
+        current_value (str): Valor atual do campo.
+        value_from_ai (str): Valor sugerido pela IA.
+        ai_confidence (int): Confiança da IA (0-100).
+        approved (bool): Se o valor foi aprovado (por IA ou manualmente).
+        value_updated (bool): Se o valor aprovado já foi propagado ao CountryQuiz.
+        timestamp (datetime): Data/hora da última atualização.
+    """
     id = db.Column(db.Integer, primary_key=True)
     country_label = db.Column(db.String(255), nullable=False)
     key = db.Column(db.String(255), nullable=False)
     current_value = db.Column(db.String(255), nullable=True)
     value_from_ai = db.Column(db.String(255), nullable=True)
+    ai_confidence = db.Column(db.Integer, nullable=True)
     approved = db.Column(db.Boolean, default=False)
     value_updated = db.Column(db.Boolean, default=False)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 class CountryQuizUpdatesHistory(db.Model):
-    """Modelo para registrar histórico de atualizações dos quizzes de países."""
+    """
+    Modelo para registrar o histórico de atualizações dos quizzes de países.
+
+    Atributos:
+        id (int): Identificador da atualização.
+        function_name (str): Nome da função que realizou a atualização.
+        country_label (str): Nome/label do país.
+        key (str): Campo atualizado.
+        old_data (str): Valor antigo.
+        new_data (str): Novo valor.
+        ai_confidence (int): Confiança da IA (se aplicável).
+        timestamp (datetime): Data/hora da atualização.
+    """
     id = db.Column(db.Integer, primary_key=True)
     function_name = db.Column(db.String(255), nullable=False)
     country_label = db.Column(db.String(255), nullable=False)
     key = db.Column(db.String(255), nullable=False)
     old_data = db.Column(db.Text, nullable=False)
     new_data = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    ai_confidence = db.Column(db.Integer, nullable=True)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
+# Criação das tabelas do banco de dados
 with app.app_context():
     db.create_all()
 
+@app.route('/admin/tools')
+@login_required
+def admin_tools():
+    """
+    Rota para exibição das ferramentas administrativas do quiz.
+    Apenas usuários autenticados como admin podem acessar.
+    Exibe a interface de updates e logs em tempo real.
+    """
+    if not current_user.is_authenticated or current_user.username != 'admin':
+        return redirect(url_for('home'))
+    return render_template('admin_tools.html')
+
+@app.route('/admin/run_update/<action>', methods=['POST'])
+@login_required
+def run_update(action):
+    print('[DEBUG] Iniciando run_update')
+    if not current_user.is_authenticated or current_user.username != 'admin':
+        print('[DEBUG] Usuário não autorizado')
+        return jsonify({'output': 'Acesso negado.'}), 403
+    log = io.StringIO()
+    sys_stdout = sys.stdout
+    output = ''
+    try:
+        print(f'[DEBUG] Redirecionando sys.stdout para log')
+        sys.stdout = log
+        try:
+            print(f'[DEBUG] Executando ação: {action}')
+            if action == 'update_new_country_data':
+                update_new_country_data_from_semanticdatabase_in_countryQuiz()
+            elif action == 'update_blanks_with_ai':
+                update_country_blanks_from_semanticdatabase_with_ai()
+            elif action == 'update_reported_questions_with_ai':
+                update_reported_questions_with_ai()
+            elif action == 'update_approved_questions':
+                update_countryQuiz_from_approved_questions()
+            elif action == 'update_approved_blanks':
+                update_countryQuiz_from_approved_blanks()
+            elif action == 'reload_quiz_data':
+                try:
+                    request_or_load_country_data()
+                    print('CountryQuiz data reloaded successfully.')
+                except Exception as e:
+                    print(f'Error reloading CountryQuiz data: {e}')
+            else:
+                print('Ação desconhecida.')
+            print(f'[DEBUG] Execução da ação {action} finalizada')
+        except Exception as e:
+            print(f'[DEBUG] Erro durante execução da ação: {e}')
+        output = log.getvalue()
+        print(f'[DEBUG] Conteúdo do log capturado:\n{output}')
+    finally:
+        sys.stdout = sys_stdout
+        print('[DEBUG] sys.stdout restaurado')
+    print('[DEBUG] Retornando resposta para o frontend')
+    return jsonify({'output': output})
+
+# Inicialização do gerenciador de login
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 @login_manager.user_loader
 def load_user(user_id):
+    """
+    Carrega um usuário pelo ID.
+
+    Args:
+        user_id (int): ID do usuário.
+
+    Returns:
+        User: Usuário carregado.
+    """
     return User.query.get(int(user_id))
 
-database = DATABASE
 
 def unify_country_data(data):
-    """Unifica dados de entrada para um país, combinando entradas duplicadas ou fragmentadas.
+    """
+    Unifica dados de entrada para um país, combinando entradas duplicadas ou fragmentadas.
 
     Args:
         data (list of dict): Lista de dicionários contendo dados de países.
@@ -126,19 +289,33 @@ def unify_country_data(data):
                 new_value = entry[key]['value']
                 if key in unified_data[country_label]:
                     existing_value = unified_data[country_label][key]['value']
-                    values_list = existing_value.split(", ")
-                    if new_value not in values_list:
-                        values_list.append(new_value)
-                    if len(values_list) > 1:
-                        unified_data[country_label][key]['value'] = ", ".join(values_list[:-1]) + " or " + values_list[-1]
+                    # Unifica todos os valores já existentes, separando por vírgula e ' or '
+                    # Junta tudo em uma lista, remove duplicatas e monta de volta no formato original
+                    sep_candidates = [', ', ' or ']
+                    temp = [existing_value]
+                    for sep in sep_candidates:
+                        temp = sum([v.split(sep) for v in temp], [])
+                    temp = [v.strip() for v in temp]
+                    if new_value not in temp:
+                        temp.append(new_value)
+                    # Remove duplicatas preservando ordem
+                    seen = set()
+                    unique_values = []
+                    for v in temp:
+                        if v not in seen and v != '':
+                            seen.add(v)
+                            unique_values.append(v)
+                    if len(unique_values) > 1:
+                        unified_data[country_label][key]['value'] = " or ".join(unique_values)
                     else:
-                        unified_data[country_label][key]['value'] = values_list[0]
+                        unified_data[country_label][key]['value'] = unique_values[0] if unique_values else ''
                 else:
                     unified_data[country_label][key] = {'value': new_value}
     return list(unified_data.values())
 
 def request_or_load_country_data():
-    """Carrega dados de países do banco de dados ou os solicita de fontes externas se o banco estiver vazio.
+    """
+    Carrega dados de países do banco de dados ou os solicita de fontes externas se o banco estiver vazio.
 
     Returns:
         list: Lista de dicionários contendo dados de países carregados ou solicitados.
@@ -156,7 +333,8 @@ def request_or_load_country_data():
     return country_data
 
 def join_data(data1, data2):
-    """Combina dois conjuntos de dados de países, atualizando o primeiro com informações do segundo.
+    """
+    Combina dois conjuntos de dados de países, atualizando o primeiro com informações do segundo.
 
     Args:
         data1 (list): Lista principal de dados de países a ser atualizada.
@@ -181,7 +359,8 @@ def join_data(data1, data2):
     return data1
 
 def format_population(number):
-    """Formata números grandes de população para um formato mais legível com sufixos 'M' ou 'K'.
+    """
+    Formata números grandes de população para um formato mais legível com sufixos 'M' ou 'K'.
 
     Args:
         number (int): Número da população a ser formatado.
@@ -197,7 +376,8 @@ def format_population(number):
         return str(number)
 
 def get_country_data():
-    """Recupera dados de países usando consultas SPARQL de fontes externas como DBpedia e Wikidata.
+    """
+    Recupera dados de países usando consultas SPARQL de fontes externas como DBpedia e Wikidata.
 
     Returns:
         list: Lista de dicionários contendo dados de países.
@@ -309,7 +489,8 @@ def get_country_data():
     return country_data
     
 def select_country_data(all_data_int, kind_of_questions_int):
-    """Seleciona dados específicos de um conjunto maior de dados de países para uso em quizzes.
+    """
+    Seleciona dados específicos de um conjunto maior de dados de países para uso em quizzes.
 
     Args:
         all_data_int (list): Lista completa de dados de países.
@@ -318,54 +499,94 @@ def select_country_data(all_data_int, kind_of_questions_int):
     Returns:
         list: Lista de tuplas contendo dados específicos selecionados para o quiz.
     """
+    def extract_url(value):
+        if isinstance(value, str) and '|' in value:
+            return value.split('|')[0]
+        return value
     country_data_int = [
-        (entry["country_label"]["value"], entry[kind_of_questions_int]["value"], 
-         entry["flag_image"]["value"], entry["anthem_audio"]["value"]) for entry in all_data_int
+        (entry["country_label"]["value"],
+         entry[kind_of_questions_int]["value"],
+         extract_url(entry["flag_image"]["value"]),
+         extract_url(entry["anthem_audio"]["value"]))
+        for entry in all_data_int
     ]
     return country_data_int
 
 all_data = request_or_load_country_data()
 
+def get_unique_alternatives(country_data, correct_answer, kind_of_questions, n_alternatives=4):
+    """
+    Retorna uma lista de alternativas únicas para a questão, incluindo a resposta correta e alternativas erradas distintas.
+    As alternativas são embaralhadas e não repetem a correta.
+    """
+    # Extrai todas as possíveis respostas únicas (ignorando vazios)
+    all_options = list(set([item[1] for item in country_data if item[1] != '']))
+    # Remove a correta
+    wrong_options = [opt for opt in all_options if opt != correct_answer]
+    # Sorteia alternativas erradas
+    sampled_wrongs = random.sample(wrong_options, min(n_alternatives-1, len(wrong_options)))
+    # Junta a correta e embaralha
+    final_options = sampled_wrongs + [correct_answer]
+    random.shuffle(final_options)
+    return final_options
+
 def generate_quiz():
-    """Gera um conjunto de perguntas para um quiz a partir de dados de países.
+    """
+    Gera um conjunto de perguntas para um quiz a partir de dados de países.
+
+    - Garante 4 alternativas únicas por pergunta (1 correta + 3 erradas).
+    - Não repete perguntas já acertadas na sessão (session["answered_correctly"]).
+    - Limita tentativas para evitar loops infinitos.
 
     Returns:
         list: Lista de perguntas geradas para o quiz.
     """
     quiz = []
-    for _ in range(6):
+    already_answered = set(session.get("answered_correctly", []))
+    attempts = 0
+    max_attempts = 100
+    while len(quiz) < 6 and attempts < max_attempts:
         if database == "DBPEDIA":
-          kind_of_questions = OPTIONS[random.randint(0, 4)]
+            kind_of_questions = OPTIONS[random.randint(0, 4)]
         else:
             kind_of_questions = OPTIONS[random.randint(0, 6)]
         country_data = select_country_data(all_data, kind_of_questions)
-        question = random.choice(country_data)
+        # Filtra perguntas já acertadas nesta sessão e evita repetição na mesma rodada
+        filtered_data = [q for q in country_data if (q[0], kind_of_questions) not in already_answered and (q, kind_of_questions) not in [(item[0], item[1]) for item in quiz]]
+        if not filtered_data:
+            attempts += 1
+            continue
+        question = random.choice(filtered_data)
+        # Filtros de validade para garantir perguntas válidas
         if kind_of_questions == "flag_label":
-          while (question[2] == ("./static/images/no_flag.png" or './static/images/no_flag.png')) or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "currency_label":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "population":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "capital_label":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "official_Language_label":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "continent_label":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        if kind_of_questions == "highest_point_label":
-          while (question[1] == '') or ((question, kind_of_questions) in quiz):
-            question = random.choice(country_data)
-        quiz.append((question, kind_of_questions))
+            # Filtro para ignorar países com bandeira padrão
+            filtered_data = [q for q in filtered_data if q[2] != "./static/images/no_flag.png"]
+            if not filtered_data:
+                attempts += 1
+                continue
+            question = random.choice(filtered_data)
+        elif kind_of_questions in ["currency_label", "population", "capital_label", "official_Language_label", "continent_label", "highest_point_label"]:
+            while (question[1] == '') or ((question, kind_of_questions) in quiz):
+                question = random.choice(filtered_data)
+        # Geração das alternativas únicas
+        alternatives = get_unique_alternatives(country_data, question[1], kind_of_questions, n_alternatives=4)
+        quiz.append((question, kind_of_questions, alternatives))
+        attempts += 1
     return quiz
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """
+    Rota para login de usuários.
+
+    Se o usuário estiver autenticado, redireciona para a rota de quiz.
+    Se o método for POST, verifica as credenciais do usuário e, se válidas, loga o usuário e redireciona para a rota de quiz.
+    Se o método for GET, exibe a página de login.
+
+    Returns:
+        redirect: Redireciona para a rota de quiz se o usuário estiver autenticado ou se as credenciais forem válidas.
+        render_template: Exibe a página de login se o método for GET.
+    """
     if current_user.is_authenticated:
         if "quiz_data" not in session or not session["quiz_data"]:
             session["quiz_data"] = generate_quiz()
@@ -397,11 +618,21 @@ def login():
                 session["user_answers"] = []
             return redirect(url_for('quiz'))
         flash('Invalid username or password')
-    top_scores = User.query.order_by(User.score.desc()).limit(10).all()
+    top_scores = User.query.filter(~User.username.in_(['admin', 'ai'])).order_by(User.score.desc()).limit(10).all()
     return render_template('login.html', top_scores=top_scores)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    """
+    Rota para registro de novos usuários.
+
+    Se o método for POST, verifica as credenciais do usuário e, se válidas, cria um novo usuário e redireciona para a rota de login.
+    Se o método for GET, exibe a página de registro.
+
+    Returns:
+        redirect: Redireciona para a rota de login se as credenciais forem válidas.
+        render_template: Exibe a página de registro se o método for GET.
+    """
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
@@ -425,6 +656,14 @@ def register():
 
 @app.route('/logout')
 def logout():
+    """
+    Rota para logout de usuários.
+
+    Remove as variáveis de sessão e redireciona para a rota de login.
+
+    Returns:
+        redirect: Redireciona para a rota de login.
+    """
     session.pop("quiz_data", [])
     session.pop('user_id', None)
     logout_user()
@@ -432,6 +671,15 @@ def logout():
 
 @app.route("/home")
 def home():
+    """
+    Rota para a página inicial.
+
+    Se o usuário estiver autenticado, redireciona para a rota de quiz.
+    Se o usuário não estiver autenticado, redireciona para a rota de login.
+
+    Returns:
+        redirect: Redireciona para a rota de quiz se o usuário estiver autenticado ou para a rota de login se não estiver.
+    """
     if current_user.is_authenticated:
         if "quiz_data" not in session or not session["quiz_data"]:
             session["quiz_data"] = generate_quiz()
@@ -449,6 +697,16 @@ def home():
 @app.route("/", methods=["GET", "POST"])
 @login_required
 def quiz():
+    """
+    Rota para o quiz.
+
+    Se o método for POST, verifica a resposta do usuário e atualiza a pontuação.
+    Se o método for GET, exibe a página do quiz.
+
+    Returns:
+        redirect: Redireciona para a rota de resultado se o quiz estiver completo.
+        render_template: Exibe a página do quiz se o método for GET.
+    """
     if not current_user.is_authenticated:
         return redirect(url_for('login'))
     else:
@@ -495,37 +753,64 @@ def quiz():
             return redirect(url_for("result"))
     if not quiz_data:
         quiz_data = generate_quiz()
-    (question, correct_answer, flag_image_url, anthem_audio), kind_of_questions = quiz_data[0]
-    if anthem_audio == "no_audio":
+    def extract_url(value):
+        """
+        Extrai apenas o primeiro conteúdo antes de '|' e antes de ' or '.
+        Args:
+            value (str): String contendo uma ou mais URLs/valores.
+        Returns:
+            str: Apenas o primeiro valor extraído.
+        """
+        if isinstance(value, str):
+            if '|' in value:
+                value = value.split('|')[0]
+            if ' or ' in value:
+                value = value.split(' or ')[0]
+        return value
+
+    (question, kind_of_questions, alternatives) = quiz_data[0]
+    country_label, correct_answer, flag_image_url, anthem_audio = question
+    # Corrige flag_image_url e anthem_audio para extrair apenas a primeira URL
+    flag_image_url = extract_url(flag_image_url)
+    anthem_audio_url = extract_url(anthem_audio)
+    if anthem_audio_url == "no_audio":
         anthem_audio = ""
+    elif anthem_audio_url:
+        anthem_audio = f"<audio controls='controls'><source src='{anthem_audio_url}' type='audio/ogg' />seu navegador não suporta HTML5</audio>"
     else:
-        anthem_audio = "<audio controls='controls'><source src='" + anthem_audio + "' type='audio/ogg' />seu navegador não suporta HTML5</audio>"
-    country_data = select_country_data(all_data, kind_of_questions)
-    country_data = [t for t in country_data if t[1] != '']
-    wrong_options = random.sample(
-        list(set([country[1] for country in country_data if (country[1] != correct_answer) and (country[0] != question)])), 2)
-    options = wrong_options + [correct_answer]
+        anthem_audio = ""
+    # Agora as opções já estão em alternatives (lista de 4 alternativas únicas)
+    options = alternatives
     if kind_of_questions == "population" and all(" or " not in option for option in options):
         options_with_format = [{"value": option, "display": format_population(int(option))} for option in options]
     else:
         options_with_format = [{"value": option, "display": option} for option in options]
     random.shuffle(options_with_format)
     if kind_of_questions == "capital_label":
-        question_text = f"What is the capital of (the) {question}?"
+        question_text = f"What is the capital of (the) {country_label}?"
     elif kind_of_questions == "currency_label":
-        question_text = f"What is the currency of (the) {question}?"
+        question_text = f"What is the currency of (the) {country_label}?"
     elif kind_of_questions == "population":
-        question_text = f"What is the population of (the) {question}?"
+        question_text = f"What is the population of (the) {country_label}?"
     elif kind_of_questions == "official_Language_label":
-        question_text = f"What is the official language of (the) {question}?"
+        question_text = f"What is the official language of (the) {country_label}?"
     elif kind_of_questions == "continent_label":
-        question_text = f"Which continent does (the) {question} belong to?"
+        question_text = f"Which continent does (the) {country_label} belong to?"
     elif kind_of_questions == "highest_point_label":
-        question_text = f"What is the highest point in (the) {question}?"
+        question_text = f"What is the highest point in (the) {country_label}?"
     else:
         question_text = f"Which country does this flag belong to?"
     before_question_text = question_text
     before_country = question
+    # Atualiza perguntas acertadas na sessão
+    if "answered_correctly" not in session:
+        session["answered_correctly"] = []
+    # Se o usuário acertou a questão anterior, registra
+    if request.method == "POST":
+        user_answer = request.form.get("answer")
+        if user_answer == correct_answer:
+            session["answered_correctly"].append((country_label, kind_of_questions))
+            session.modified = True
     session["quiz_data"] = quiz_data
     session["score"] = score
     session["before_question_text"] = before_question_text
@@ -536,6 +821,14 @@ def quiz():
 @app.route("/result")
 @login_required
 def result():
+    """
+    Rota para exibir o resultado do quiz.
+
+    Atualiza a pontuação do usuário e exibe a página de resultado.
+
+    Returns:
+        render_template: Exibe a página de resultado.
+    """
     user = User.query.get(session['user_id'])
     total_score = session["score"]
     user.score += total_score
@@ -551,6 +844,14 @@ def result():
 @app.route('/admin/reported_questions')
 @login_required
 def reported_questions():
+    """
+    Rota para exibir questões reportadas.
+
+    Exibe a página de questões reportadas.
+
+    Returns:
+        render_template: Exibe a página de questões reportadas.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     reported_questions = ReportedQuestion.query.filter(ReportedQuestion.value_from_ai.isnot(None), ReportedQuestion.approved == False, ReportedQuestion.value_updated == False).all()
@@ -559,6 +860,17 @@ def reported_questions():
 @app.route('/admin/approve_question/<int:question_id>', methods=['POST'])
 @login_required
 def approve_question(question_id):
+    """
+    Rota para aprovar uma questão reportada.
+
+    Aprova a questão reportada e redireciona para a página de questões reportadas.
+
+    Args:
+        question_id (int): ID da questão reportada.
+
+    Returns:
+        redirect: Redireciona para a página de questões reportadas.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     question = ReportedQuestion.query.get_or_404(question_id)
@@ -569,6 +881,17 @@ def approve_question(question_id):
 @app.route('/admin/bypass_question/<int:question_id>', methods=['POST'])
 @login_required
 def bypass_question(question_id):
+    """
+    Rota para ignorar uma questão reportada.
+
+    Ignora a questão reportada e redireciona para a página de questões reportadas.
+
+    Args:
+        question_id (int): ID da questão reportada.
+
+    Returns:
+        redirect: Redireciona para a página de questões reportadas.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     question = ReportedQuestion.query.get_or_404(question_id)
@@ -576,27 +899,88 @@ def bypass_question(question_id):
     db.session.commit()
     return redirect(url_for('reported_questions'))
 
+@app.route('/admin/country_updates_debug')
+@login_required
+def country_updates_debug():
+    """
+    Rota de depuração para exibir atualizações de países com todos os detalhes.
+    """
+    session = Session()
+    country_updates = session.query(CountryBlanksFromSemanticDatabase)\
+        .filter(CountryBlanksFromSemanticDatabase.approved == False, CountryBlanksFromSemanticDatabase.value_updated == False).all()
+    print("[DEBUG] Blanks enviados ao template country_updates_debug.html:")
+    for blank in country_updates:
+        print(f"[DEBUG] id={blank.id}, country_label={blank.country_label}, key={blank.key}, current_value={blank.current_value}, value_from_ai={blank.value_from_ai}, approved={blank.approved}, value_updated={blank.value_updated}")
+    session.close()
+    return render_template('country_updates_debug.html', country_updates=country_updates)
+
 @app.route('/admin/country_updates')
 @login_required
 def country_updates():
+    """
+    Rota para exibir atualizações de países.
+
+    Exibe a página de atualizações de países.
+
+    Returns:
+        render_template: Exibe a página de atualizações de países.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
-    country_updates = CountryBlanksFromSemanticDatabase.query.filter(CountryBlanksFromSemanticDatabase.value_from_ai.isnot(None), CountryBlanksFromSemanticDatabase.value_from_ai.isnot(""), CountryBlanksFromSemanticDatabase.approved == False, CountryBlanksFromSemanticDatabase.value_updated == False).all()
+    from sqlalchemy import or_
+    session = Session()
+    country_updates = session.query(CountryBlanksFromSemanticDatabase)\
+        .filter(or_(
+            CountryBlanksFromSemanticDatabase.current_value == None,
+            CountryBlanksFromSemanticDatabase.current_value == "",
+            CountryBlanksFromSemanticDatabase.current_value == "no_audio",
+            CountryBlanksFromSemanticDatabase.current_value == "./static/images/no_flag.png"
+        ),
+        or_(
+            CountryBlanksFromSemanticDatabase.value_from_ai == None,
+            CountryBlanksFromSemanticDatabase.value_from_ai == ""
+        ),
+        CountryBlanksFromSemanticDatabase.value_updated == False,
+        CountryBlanksFromSemanticDatabase.approved == False
+    ).all()
     return render_template('country_updates.html', country_updates=country_updates)
 
 @app.route('/admin/approve_country_update/<int:country_id>', methods=['POST'])
 @login_required
 def approve_country_update(country_id):
+    """
+    Rota para aprovar uma atualização de país.
+
+    Aprova a atualização de país e redireciona para a página de atualizações de países.
+
+    Args:
+        country_id (int): ID da atualização de país.
+
+    Returns:
+        redirect: Redireciona para a página de atualizações de países.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     country_update = CountryBlanksFromSemanticDatabase.query.get_or_404(country_id)
     country_update.approved = True
+    # Não marcar value_updated aqui! Apenas após batch de atualização (update_countryQuiz_from_approved_blanks)
     db.session.commit()
     return redirect(url_for('country_updates'))
 
 @app.route('/admin/bypass_country_update/<int:country_id>', methods=['POST'])
 @login_required
 def bypass_country_update(country_id):
+    """
+    Rota para ignorar uma atualização de país.
+
+    Ignora a atualização de país e redireciona para a página de atualizações de países.
+
+    Args:
+        country_id (int): ID da atualização de país.
+
+    Returns:
+        redirect: Redireciona para a página de atualizações de países.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     country_update = CountryBlanksFromSemanticDatabase.query.get_or_404(country_id)
@@ -604,9 +988,44 @@ def bypass_country_update(country_id):
     db.session.commit()
     return redirect(url_for('country_updates'))
 
+@app.route('/admin/manual_update_country_blank/<int:blank_id>', methods=['POST'])
+@login_required
+def manual_update_country_blank(blank_id):
+    """
+    Rota para atualizar manualmente um campo de país.
+    Atualiza o campo de país e redireciona para a página de atualizações de países.
+    Args:
+        blank_id (int): ID do campo de país.
+    Returns:
+        redirect: Redireciona para a página de atualizações de países.
+    """
+    if current_user.username != 'admin':
+        print(f"[DEBUG] Usuário não autorizado tentou acessar manual_update_country_blank")
+        return redirect(url_for('home'))
+
+    print(f"[DEBUG] POST recebido para blank_id={blank_id}")
+    print(f"[DEBUG] Dados do formulário: {dict(request.form)}")
+    new_value = request.form.get('new_value')
+    blank = CountryBlanksFromSemanticDatabase.query.get_or_404(blank_id)
+    print(f"[DEBUG] Blank antes da atualização: id={blank.id}, country_label={blank.country_label}, key={blank.key}, current_value={blank.current_value}, value_from_ai={blank.value_from_ai}, approved={blank.approved}, value_updated={blank.value_updated}")
+    blank.current_value = new_value
+    blank.value_from_ai = new_value  # Garante que o campo usado no template seja atualizado
+    blank.approved = True  # Marca como aprovado após edição manual
+    db.session.commit()
+    print(f"[DEBUG] Blank depois da atualização: id={blank.id}, country_label={blank.country_label}, key={blank.key}, current_value={blank.current_value}, value_from_ai={blank.value_from_ai}, approved={blank.approved}, value_updated={blank.value_updated}")
+    return redirect(url_for('country_updates'))
+
 @app.route('/admin/reload_country_quiz', methods=['POST'])
 @login_required
 def reload_country_quiz():
+    """
+    Rota para recarregar o quiz de países.
+
+    Recarrega o quiz de países e exibe uma mensagem de sucesso.
+
+    Returns:
+        redirect: Redireciona para a página de quiz.
+    """
     if current_user.username != 'admin':
         return redirect(url_for('home'))
     try:
