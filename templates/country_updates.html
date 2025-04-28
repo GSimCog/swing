@@ -6,28 +6,107 @@
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
     <title>Country Updates</title>
     <style>
-      table {
-        overflow-x: auto;
-        display: block;
-        width: 100%;
+      body {
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 0 8px;
       }
-      input[type="text"] {
-        max-width: 100%;
-        box-sizing: border-box;
+      .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+        background: #fff;
+        table-layout: auto;
+        word-break: break-word;
+      }
+      th, td {
+        padding: 0.5em 1em;
+        vertical-align: middle;
+      }
+      th {
+        background: #f3f3f3;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+      button, input[type="submit"] {
+        border-radius: 6px;
+        border: none;
+        background: #1976d2;
+        color: #fff;
+        padding: 0.4em 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 2px;
+        transition: background 0.2s;
+      }
+      button:hover, input[type="submit"]:hover {
+        background: #1565c0;
+      }
+      a {
+        color: #1976d2;
+        word-break: break-all;
+      }
+      td {
+        word-break: break-word;
       }
       @media (max-width: 700px) {
-        .debug-info-col {
-          display: none;
+        th, td {
+          padding: 0.3em 0.4em;
+          font-size: 0.96em;
         }
         table {
-          font-size: 0.95em;
+          min-width: 500px;
+          font-size: 0.93em;
+        }
+        .debug-info-col, .debug-info-cell {
+          display: none !important;
+        }
+      }
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #222 !important;
+          color: #f4f4f4;
+        }
+        table {
+          background: #181818;
+          color: #f4f4f4;
+        }
+        th {
+          background: #222;
+          color: #fff;
+        }
+        tr:nth-child(even) {
+          background: #232323;
+        }
+        tr:nth-child(odd) {
+          background: #181818;
+        }
+        a, a:visited {
+          color: #90caf9;
+        }
+        button, input[type="submit"] {
+          background: #1565c0;
+          color: #fff;
+        }
+        button:hover, input[type="submit"]:hover {
+          background: #1976d2;
         }
       }
     </style>
   </head>
   <body>
     <h1>Country Updates</h1>
-    <table>
+    <div class="table-responsive">
+      <table>
       <thead>
         <tr>
           <th>ID</th>
@@ -44,32 +123,29 @@
           <td>{{ country.id }}</td>
           <td>{{ country.country_label }}</td>
           <td>{{ country.key }}</td>
-          <td>
-  {% if country.current_value %}
-    {% if country.current_value.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) %}
-      {% set img_path = country.current_value %}
-      {% if 'no_flag.png' in img_path %}
-        <img src="{{ url_for('static', filename='images/no_flag.png') }}" alt="Image" style="max-width: 64px; max-height: 40px;">
-      {% else %}
-        <img src="{{ img_path if img_path.startswith('http') or img_path.startswith('/static/') else '/static/' + img_path.lstrip('./') }}" alt="Image" style="max-width: 64px; max-height: 40px;">
-      {% endif %}
-    {% else %}
-      {{ country.current_value }}
-    {% endif %}
-  {% else %}
-    <!-- Valor em branco -->
-  {% endif %}
-</td>
-          <td>
-            <form action="{{ url_for('manual_update_country_blank', blank_id=country.id) }}" method="POST" style="display:inline;">
-  <input type="text" name="new_value" value="{{ country.current_value or country.value_from_ai or '' }}" style="width: 180px;">
-  <input type="submit" value="Save" />
-  <span style="font-size: 0.8em; color: #888;">ID: {{ country.id }}</span>
-  {% if country.value_from_ai and country.value_from_ai.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) %}
-    <img src="{{ country.value_from_ai }}" alt="Image" style="max-width: 64px; max-height: 40px;">
-  {% endif %}
-</form>
-</td>
+          <td colspan="2">
+            <form action="{{ url_for('manual_update_country_blank', blank_id=country.id) }}" method="POST" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+              {% if country.current_value %}
+                {% if country.current_value.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) %}
+                  {% set img_path = country.current_value %}
+                  <img src="{{ img_path if img_path.startswith('http') or img_path.startswith('/static/') else '/static/' + img_path.lstrip('./') }}" alt="Image" style="max-width: 64px; max-height: 40px;">
+                {% else %}
+                  {{ country.current_value }}
+                {% endif %}
+              {% endif %}
+              {% if country.value_from_ai %}
+                <span style="margin-left:8px;">{{ country.value_from_ai }}</span>
+              {% endif %}
+              <input type="text" name="new_value" value="{{ country.current_value or country.value_from_ai or '' }}" style="width: 140px;">
+              <input type="submit" value="Save" />
+              <span style="font-size: 0.8em; color: #888;">ID: {{ country.id }}</span>
+            </form>
+          </td>
+          <td class="debug-info-cell">
+            {% if country.debug_info %}
+              {{ country.debug_info }}
+            {% endif %}
+          </td>
 
         <td class="debug-info-col">
           <b>ID:</b> {{ country.id }}<br>
@@ -85,7 +161,8 @@
         </tr>
         {% endfor %}
       </tbody>
-    </table>
+      </table>
+    </div>
     <a href="{{ url_for('quiz') }}">Back to Quiz</a>
   </body>
 </html>
