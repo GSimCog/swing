@@ -1,0 +1,107 @@
+Found 105 fields with multiple values (separator ' or '):
+
+Country: New Zealand | Field: continent_label | Count: 2 | Value: Australian continent or Oceania or Insular Oceania
+Country: New Zealand | Field: official_Language_label | Count: 2 | Value: English or Māori or New Zealand Sign Language
+Country: Tuvalu | Field: currency_label | Count: 1 | Value: Australian dollar or Tuvaluan dollar
+Country: Tuvalu | Field: continent_label | Count: 1 | Value: Insular Oceania or Oceania
+Country: Tuvalu | Field: official_Language_label | Count: 1 | Value: Tuvaluan or English
+Country: El Salvador | Field: currency_label | Count: 1 | Value: United States dollar or bitcoin
+Country: Fiji | Field: official_Language_label | Count: 2 | Value: English or iTaukei or Hindi
+Country: Kiribati | Field: capital_label | Count: 1 | Value: Tarawa or South Tarawa
+Country: Kiribati | Field: currency_label | Count: 1 | Value: Kiribati dollar or Australian dollar
+Country: Kiribati | Field: continent_label | Count: 1 | Value: Oceania or Insular Oceania
+Country: Kiribati | Field: official_Language_label | Count: 1 | Value: English or Gilbertese
+Country: India | Field: official_Language_label | Count: 1 | Value: Hindi or English
+Country: Haiti | Field: official_Language_label | Count: 1 | Value: Haitian Creole or French
+Country: Timor-Leste | Field: currency_label | Count: 1 | Value: East Timor centavo coins or United States dollar
+Country: Timor-Leste | Field: official_Language_label | Count: 1 | Value: Tetum or Portuguese
+Country: Tonga | Field: official_Language_label | Count: 1 | Value: Tongan or English
+Country: Panama | Field: currency_label | Count: 1 | Value: United States dollar or Panamanian balboa
+Country: Panama | Field: continent_label | Count: 1 | Value: North America or South America
+Country: Vanuatu | Field: official_Language_label | Count: 2 | Value: Bislama or English or French
+Country: Pakistan | Field: official_Language_label | Count: 1 | Value: Urdu or English
+Country: Paraguay | Field: official_Language_label | Count: 1 | Value: Spanish or Guarani
+Country: Samoa | Field: official_Language_label | Count: 1 | Value: Samoan or English
+Country: Bolivia | Field: capital_label | Count: 1 | Value: La Paz or Sucre
+Country: Bolivia | Field: determination_method_label | Count: 1 | Value: de facto or de jure
+Country: Bolivia | Field: official_Language_label | Count: 4 | Value: Spanish or Quechua or Aymara or Guarani or other indigenous languages
+Country: Papua New Guinea | Field: official_Language_label | Count: 2 | Value: Tok Pisin or English or Hiri Motu
+Country: Sri Lanka | Field: capital_label | Count: 1 | Value: Colombo or Sri Jayawardenepura Kotte
+Country: Sri Lanka | Field: determination_method_label | Count: 1 | Value: de facto or de jure
+Country: Sri Lanka | Field: official_Language_label | Count: 1 | Value: Sinhala or Tamil
+Country: Federated States of Micronesia | Field: continent_label | Count: 1 | Value: Oceania or Insular Oceania
+Country: South Africa | Field: capital_label | Count: 2 | Value: Bloemfontein or Cape Town or Pretoria
+Country: South Africa | Field: official_Language_label | Count: 9 | Value: Afrikaans or English or isiNdebele or isiXhosa or isiZulu or Sesotho or Setswana or siSwati or Tshivenda or Xitsonga
+Country: Maldives | Field: highest_point_label | Count: 1 | Value: Villingili or Addu City
+Country: South Korea | Field: currency_label | Count: 1 | Value: Korean mun or won
+Country: Yemen | Field: capital_label | Count: 1 | Value: Aden or Sanaa
+Country: Yemen | Field: determination_method_label | Count: 1 | Value: de facto or de jure
+Country: Palau | Field: continent_label | Count: 1 | Value: Oceania or Insular Oceania
+Country: Palau | Field: official_Language_label | Count: 1 | Value: Palauan or English
+Country: Peru | Field: official_Language_label | Count: 2 | Value: Spanish or Quechua or Aymara
+Country: Suriname | Field: continent_label | Count: 1 | Value: North America or South America
+Country: Algeria | Field: official_Language_label | Count: 1 | Value: Arabic or Tamazight
+Country: Marshall Islands | Field: currency_label | Count: 1 | Value: United States dollar or SOV
+Country: Marshall Islands | Field: official_Language_label | Count: 1 | Value: Marshallese or English
+Country: Solomon Islands | Field: continent_label | Count: 1 | Value: Oceania or Insular Oceania
+Country: Chad | Field: official_Language_label | Count: 1 | Value: French or Arabic
+Country: Nauru | Field: official_Language_label | Count: 1 | Value: Nauruan or English
+Country: Singapore | Field: official_Language_label | Count: 3 | Value: Malay or Standard Chinese or English or Tamil
+Country: Sweden | Field: anthem_audio | Count: 1 | Value: http://commons.wikimedia.org/wiki/Special:FilePath/Du%20gamla%2C%20du%20fria.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Sweden.ogg
+Country: Eritrea | Field: official_Language_label | Count: 2 | Value: Tigrinya or Arabic or English
+Country: Iraq | Field: official_Language_label | Count: 1 | Value: Arabic or Kurdish
+Country: Morocco | Field: population | Count: 1 | Value: 36828330 or 37076584
+Country: Morocco | Field: official_Language_label | Count: 1 | Value: Arabic or Standard Moroccan Amazigh
+Country: Comoros | Field: official_Language_label | Count: 2 | Value: Comorian or Arabic or French
+Country: Philippines | Field: official_Language_label | Count: 1 | Value: Filipino or English
+Country: Kingdom of Denmark | Field: currency_label | Count: 1 | Value: Danish krone or Faroese króna
+Country: Kingdom of Denmark | Field: anthem_audio | Count: 2 | Value: http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Kong%20Kristian%20stod%20ved%20h%C3%B8jen%20mast.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/Der%20er%20et%20yndigt%20land%2C%20Hans%20Ernst%20Kr%C3%B8yer%2C%20Erik%20Damskier%2C%202009-09-30.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Der%20er%20et%20yndigt%20land.ogg
+Country: South Sudan | Field: official_Language_label | Count: 1 | Value: English or Arabic
+Country: Brunei | Field: official_Language_label | Count: 1 | Value: Malay or British English
+Country: State of Palestine | Field: capital_label | Count: 1 | Value: Ramallah or Jerusalem
+Country: State of Palestine | Field: determination_method_label | Count: 1 | Value: de facto or de jure
+Country: Vatican City | Field: official_Language_label | Count: 1 | Value: Latin or Italian
+Country: Afghanistan | Field: official_Language_label | Count: 1 | Value: Dari or Pashto
+Country: Central African Republic | Field: official_Language_label | Count: 1 | Value: French or Sango
+Country: Tanzania | Field: official_Language_label | Count: 1 | Value: Swahili or English
+Country: Madagascar | Field: official_Language_label | Count: 1 | Value: Malagasy or French
+Country: Equatorial Guinea | Field: official_Language_label | Count: 2 | Value: Spanish or French or Portuguese
+Country: Sudan | Field: official_Language_label | Count: 1 | Value: Arabic or English
+Country: Seychelles | Field: official_Language_label | Count: 2 | Value: Seychellois Creole or English or French
+Country: Luxembourg | Field: official_Language_label | Count: 2 | Value: Luxembourgish or French or German
+Country: Djibouti | Field: official_Language_label | Count: 1 | Value: French or Arabic
+Country: Namibia | Field: currency_label | Count: 1 | Value: rand or Namibian dollar
+Country: France | Field: anthem_audio | Count: 1 | Value: http://commons.wikimedia.org/wiki/Special:FilePath/Chaliapine%20-%20Rouget%20de%20Lisle%20-%20La%20Marseillaise.ogg or http://commons.wikimedia.org/wiki/Special:FilePath/La%20Marseillaise.ogg
+Country: France | Field: currency_label | Count: 1 | Value: euro or CFP Franc
+Country: Eswatini | Field: capital_label | Count: 1 | Value: Mbabane or Lobamba
+Country: Eswatini | Field: determination_method_label | Count: 1 | Value: de jure or de facto
+Country: Eswatini | Field: official_Language_label | Count: 1 | Value: Swazi or English
+Country: Kenya | Field: official_Language_label | Count: 1 | Value: Swahili or English
+Country: Zimbabwe | Field: currency_label | Count: 8 | Value: euro or rand or renminbi or yen or Australian dollar or pound sterling or Zimbabwean dollar or United States dollar or Indian rupee
+Country: Zimbabwe | Field: official_Language_label | Count: 15 | Value: Chewa or Chibarwe or English or Kalanga or Koisan or Nambya or Ndau or Ndebele or Shangani or Shona or Sotho or Tonga or Tswana or Venda or Xhosa or Zimbabwean Sign Language
+Country: Cameroon | Field: official_Language_label | Count: 1 | Value: English or French
+Country: Kingdom of the Netherlands | Field: official_Language_label | Count: 1 | Value: Dutch or Frisian
+Country: Rwanda | Field: official_Language_label | Count: 3 | Value: Kinyarwanda or French or English or Swahili
+Country: Malawi | Field: official_Language_label | Count: 1 | Value: English or Chichewa
+Country: Belarus | Field: official_Language_label | Count: 1 | Value: Belarusian or Russian
+Country: People's Republic of China | Field: anthem_audio | Count: 3 | Value: http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E5%90%88%E5%94%B1%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E5%BC%A6%E4%B9%90%E7%89%88%EF%BC%89.wav or http://commons.wikimedia.org/wiki/Special:FilePath/%E3%80%8A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C%E3%80%8B%E5%AE%98%E6%96%B9%E5%BD%95%E9%9F%B3%E7%89%88%E6%9C%AC%EF%BC%88%E7%AE%A1%E4%B9%90%E7%89%88%EF%BC%89.wav
+Country: Bosnia and Herzegovina | Field: official_Language_label | Count: 2 | Value: Bosnian or Croatian or Serbian
+Country: Canada | Field: official_Language_label | Count: 1 | Value: English or French
+Country: Lesotho | Field: currency_label | Count: 1 | Value: loti or rand
+Country: Lesotho | Field: official_Language_label | Count: 1 | Value: Sesotho or English
+Country: Kazakhstan | Field: official_Language_label | Count: 1 | Value: Kazakh or Russian
+Country: Norway | Field: official_Language_label | Count: 1 | Value: Norwegian or Sami
+Country: Somalia | Field: official_Language_label | Count: 1 | Value: Somali or Arabic
+Country: Finland | Field: official_Language_label | Count: 1 | Value: Finnish or Swedish
+Country: Ireland | Field: official_Language_label | Count: 1 | Value: Irish or English
+Country: Cyprus | Field: official_Language_label | Count: 1 | Value: Greek or Turkish
+Country: Mauritius | Field: official_Language_label | Count: 1 | Value: English or French
+Country: Belgium | Field: official_Language_label | Count: 2 | Value: Dutch or French or German
+Country: Togo | Field: official_Language_label | Count: 2 | Value: French or Ewe or Kabiye
+Country: Czech Republic | Field: anthem_audio | Count: 1 | Value: http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20m%C5%AFj.mid or http://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20muj.ogg        
+Country: Switzerland | Field: official_Language_label | Count: 3 | Value: German or French or Italian or Romansh
+Country: North Macedonia | Field: official_Language_label | Count: 1 | Value: Macedonian or Albanian
+Country: Botswana | Field: official_Language_label | Count: 1 | Value: English or Setswana
+Country: Uganda | Field: official_Language_label | Count: 1 | Value: English or Swahili
+Country: Malta | Field: official_Language_label | Count: 1 | Value: Maltese or English
+Country: Burundi | Field: official_Language_label | Count: 2 | Value: Kirundi or French or English

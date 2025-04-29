@@ -1,0 +1,11 @@
+Report saved to non_textual_assets_report.json
+
+Summary by asset type and status:
+
+Image:
+  OK: 178
+  HTTP 404: 8
+
+Audio:
+  OK: 152
+  HTTP 404: 5
