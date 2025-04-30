@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+  <title>Admin History</title>
+  <style>
+    body { max-width: 950px; margin: 0 auto; padding: 0 8px; }
+    .table-responsive { width: 100%; overflow-x: auto; }
+    table { width: 100%; min-width: 600px; border-collapse: collapse; background: #fff; table-layout: auto; word-break: break-word; }
+    th, td { padding: 0.5em 1em; vertical-align: middle; }
+    th { background: #f3f3f3; position: sticky; top: 0; z-index: 2; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    button, input[type="submit"] { border-radius: 6px; border: none; background: #1976d2; color: #fff; padding: 0.4em 1.2em; font-weight: bold; cursor: pointer; margin: 2px; transition: background 0.2s; }
+    button:hover, input[type="submit"]:hover { background: #1565c0; }
+    a { color: #1976d2; word-break: break-all; }
+    td { word-break: break-word; }
+    .pagination { margin: 1em 0; display: flex; justify-content: center; gap: 8px; }
+    .pagination a, .pagination span { padding: 0.4em 0.9em; border-radius: 4px; background: #f3f3f3; color: #1976d2; text-decoration: none; font-weight: bold; }
+    .pagination .active { background: #1976d2; color: #fff; }
+    @media (max-width: 700px) {
+      th, td { padding: 0.3em 0.4em; font-size: 0.96em; }
+      table { min-width: 500px; font-size: 0.93em; }
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #222 !important; color: #f4f4f4; }
+      table { background: #181818; color: #f4f4f4; }
+      th { background: #222; color: #fff; }
+      tr:nth-child(even) { background: #232323; }
+      tr:nth-child(odd) { background: #181818; }
+      a, a:visited { color: #90caf9; }
+      button, input[type="submit"] { background: #1565c0; color: #fff; }
+      button:hover, input[type="submit"]:hover { background: #1976d2; }
+      .pagination a, .pagination span { background: #232323; color: #90caf9; }
+      .pagination .active { background: #1976d2; color: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Operation History</h1>
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Function</th>
+          <th>Country</th>
+          <th>Key</th>
+          <th>Old Data</th>
+          <th>New Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in history_entries %}
+        <tr>
+          <td>{{ entry.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+          <td>{{ entry.function_name }}</td>
+          <td>{{ entry.country_label }}</td>
+          <td>{{ entry.key }}</td>
+          <td>{{ entry.old_data }}</td>
+          <td>{{ entry.new_data }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination">
+    {% if page > 1 %}
+      <a href="{{ url_for('admin_history', page=page-1) }}">&laquo; Prev</a>
+    {% endif %}
+    {% for p in range(1, total_pages+1) %}
+      {% if p == page %}
+        <span class="active">{{ p }}</span>
+      {% else %}
+        <a href="{{ url_for('admin_history', page=p) }}">{{ p }}</a>
+      {% endif %}
+    {% endfor %}
+    {% if page < total_pages %}
+      <a href="{{ url_for('admin_history', page=page+1) }}">Next &raquo;</a>
+    {% endif %}
+  </div>
+  <a href="{{ url_for('admin_tools') }}">&larr; Back to Admin Tools</a>
+</body>
+</html>

@@ -6,6 +6,39 @@
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
   <title>Admin Tools</title>
   <style>
+    .admin-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7em;
+      margin-bottom: 1.3em;
+    }
+    .admin-nav-btn {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0.7em 1.2em;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.08em;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.09);
+    }
+    .admin-nav .blue-btn, .admin-nav .green-btn {
+      color: #fff !important;
+      font-weight: 700 !important;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+    }
+    .blue-btn {
+      background: #1976d2;
+    }
+    .blue-btn:hover { background: #1565c0; }
+    .green-btn {
+      background: #388e3c;
+    }
+    .green-btn:hover { background: #256b27; }
     .admin-actions {
       display: flex;
       flex-wrap: wrap;
@@ -18,6 +51,40 @@
       font-size: 1em;
       padding: 0.7em 1.2em;
       cursor: pointer;
+      color: #222;
+      text-shadow: none;
+    }
+    .action-blue-btn {
+      background: #1976d2;
+      color: #fff !important;
+      font-weight: 700 !important;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+    }
+    .action-blue-btn:hover {
+      background: #1565c0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .admin-actions button {
+        color: #222;
+      }
+      .blue-btn, .green-btn {
+        color: #fff !important;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      .admin-actions button {
+        color: #fff;
+      }
+      .admin-actions .action-blue-btn {
+        color: #fff !important;
+        font-weight: 700 !important;
+      }
+      .admin-nav .blue-btn {
+        color: #fff !important;
+      }
+      .admin-nav .green-btn {
+        color: #fff !important;
+      }
     }
     #log-output {
       width: 100%;
@@ -28,6 +95,14 @@
       resize: vertical;
     }
     @media (max-width: 700px) {
+      .admin-nav {
+        gap: 0.5em;
+      }
+      .admin-nav-btn {
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+      }
       .admin-actions {
         flex-direction: column;
       }
@@ -39,6 +114,11 @@
 </head>
 <body>
   <h2>Admin: Manual Updates</h2>
+  <div class="admin-nav">
+    <a href="{{ url_for('admin_history') }}" class="admin-nav-btn blue-btn">View administrative history</a>
+    <a href="{{ url_for('reported_questions') }}" class="admin-nav-btn green-btn">Reported Questions</a>
+    <a href="{{ url_for('country_updates') }}" class="admin-nav-btn green-btn">Country Updates</a>
+  </div>
   <div class="admin-actions">
     <button onclick="runUpdate('update_new_country_data')">Update new countries</button>
     <button onclick="runUpdate('update_blanks_with_ai')">Update blanks via AI</button>

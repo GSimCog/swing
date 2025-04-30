@@ -114,7 +114,6 @@
           <th>Property</th>
           <th>Current answer</th>
           <th>Answer from OpenAI API</th>
-          <th class="debug-info-col">Debug info</th>
         </tr>
       </thead>
       <tbody>
@@ -141,19 +140,6 @@
               <span style="font-size: 0.8em; color: #888;">ID: {{ country.id }}</span>
             </form>
           </td>
-          <td class="debug-info-cell">
-            {% if country.debug_info %}
-              {{ country.debug_info }}
-            {% endif %}
-          </td>
-
-        <td class="debug-info-col">
-          <b>ID:</b> {{ country.id }}<br>
-          <b>País:</b> {{ country.country_label }}<br>
-          <b>Chave:</b> {{ country.key }}<br>
-          <b>approved:</b> {{ country.approved }}<br>
-          <b>value_updated:</b> {{ country.value_updated }}
-        </td>
         </tr>
         {% else %}
         <tr>
@@ -163,6 +149,6 @@
       </tbody>
       </table>
     </div>
-    <a href="{{ url_for('quiz') }}">Back to Quiz</a>
+    <a href="{{ url_for('admin_tools') }}">Back to Admin Tools</a>
   </body>
 </html>

@@ -55,22 +55,18 @@
         <input type="submit" name="wrong_answers" value="Report error" />
       </div>-->
     </form>
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <!-- <a href="{{ url_for('logout') }}">Logout</a>-->
     {% if current_user.is_authenticated and current_user.username == 'admin' %}
     <div class="admin-links">
       
-      {% endif %} {% if current_user.is_authenticated and current_user.username
-      == 'admin' %}
-      <div class="admin-links">
-        <a href="{{ url_for('reported_questions') }}">Reported Questions</a>
-      </div>
-      {% endif %} {% if current_user.is_authenticated and current_user.username
-      == 'admin' %}
-      <div class="admin-links">
-        <a href="{{ url_for('country_updates') }}">Country Updates</a>
-      </div>
+      {% endif %} {% if current_user.is_authenticated and current_user.username == 'admin' %}
       <div class="admin-links">
         <a href="{{ url_for('admin_tools') }}">Admin Tools</a>
+      </div>
+      {% endif %}
+      {% if current_user.is_authenticated %}
+      <div class="admin-links">
+        <a href="{{ url_for('logout') }}">Logout</a>
       </div>
       {% endif %}
     </div>
