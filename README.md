@@ -2,6 +2,11 @@
 
 Welcome to SWInG, a modern and automated geography quiz platform focused on up-to-date country data and AI-powered validation. The app leverages semantic data sources (mainly Wikidata) and integrates OpenAI (GPT-4o) to fill gaps and validate answers. Everything is designed for reliability, automation, and minimal manual intervention, providing a smooth experience for users and administrators.
 
+## Authors
+This research is conducted by a student and a professor from the Instituto Federal do Rio de Janeiro, Brazil.
+- **Wagner Luis Cardozo Gomes de Freitas (student)**
+- **Jose Ricardo da Silva Junior (research professor and supervisor)**
+
 ## ✨ Key features
 
 - **Diverse questions**: Test your knowledge about capitals, populations, flags, official languages, currencies, continents, and highest points.
@@ -26,6 +31,10 @@ Welcome to SWInG, a modern and automated geography quiz platform focused on up-t
 - **AI integration**: OpenAI API (GPT-4o)
 - **Frontend**: HTML5, CSS, JavaScript
 - **Configuration**: `quiz.config` for keys and parameters
+
+## Security
+- **Authentication**: Users and admins are authenticated via Flask-Login.
+- **API Keys**: Never expose your OpenAI key publicly.
 
 ## 🚦 Installation
 
@@ -53,19 +62,13 @@ Welcome to SWInG, a modern and automated geography quiz platform focused on up-t
    python app.py
    ```
 
-## Usage
+## Main File Structure
 
-- **Quiz users**: Register, log in, and start answering country questions. Your score will be tracked and ranked.
-- **Admin interface**:
-  - Log in as the admin user (configured in the database).
-  - Access `/admin/tools` to use the Admin Tools panel.
-  - Use the provided buttons to:
-    - Update new country data
-    - Fill blanks via AI
-    - Propagate approved questions/blanks
-    - Reload quiz data
-  - Real-time logs will appear in the output area, including progress and any errors.
-  - Use the "Back" button to return to the main quiz interface.
+- `app.py`: Main Flask app, routes, models, and quiz logic.
+- `data_update.py`: Scripts for automated data update and validation.
+- `quiz.config`: Sensitive settings (API keys, AI parameters, etc).
+- `requirements.txt`: Project dependencies.
+- `templates/`: HTML templates for the app.
 
 ## Configuration
 
@@ -77,6 +80,24 @@ Welcome to SWInG, a modern and automated geography quiz platform focused on up-t
   database = WIKIDATA (example)
   ```
 
+## Usage
+
+- **Quiz users**: Register, log in, and start answering country questions. Your score will be tracked and ranked.
+  - Go to `http://localhost:5000` in your browser.
+  - Register a new account or log in.
+  - Play the quiz!
+- **Admin interface**:
+  - Log in as the admin user (configured in the database).
+  - Access `/admin/tools` to use the Admin Tools panel.
+  - Admin users can access special routes to review and approve AI suggestions.
+  - Use the provided buttons to:
+    - Update new country data
+    - Fill blanks via AI
+    - Propagate approved questions/blanks
+    - Reload quiz data
+  - Real-time logs will appear in the output area, including progress and any errors.
+  - Use the "Back" button to return to the main quiz interface.
+
 ## Troubleshooting & Support
 
 - **OpenAI API issues**: Ensure your API key is correct and has sufficient quota.
@@ -84,11 +105,6 @@ Welcome to SWInG, a modern and automated geography quiz platform focused on up-t
 - **Long updates**: Some admin operations may take several minutes depending on data volume and API response times. Progress will be shown in the admin log area.
 - **Logs not appearing**: Check the backend console for errors. All backend exceptions are logged and should appear in the admin interface.
 - **Further help**: See code comments (in Portuguese) for detailed explanations of each module and function.
-
-## Authors
-This research is conducted by a student and a professor from the Instituto Federal do Rio de Janeiro, Brazil.
-- **Wagner Luis Cardozo Gomes de Freitas (student)**
-- **Jose Ricardo da Silva Junior (research professor and supervisor)**
 
 ## Acknowledgments
    - Data sources: [Wikidata](https://www.wikidata.org/), [DBpedia](https://www.dbpedia.org/)
@@ -102,27 +118,6 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 ## License
 
 This project is licensed under the MIT License.
-
-## Usage
-- Go to `http://localhost:5000` in your browser.
-- Register a new account or log in.
-- Play the quiz!
-- Admin users can access special routes to review and approve AI suggestions.
-
-## Main File Structure
-
-- `app.py`: Main Flask app, routes, models, and quiz logic.
-- `data_update.py`: Scripts for automated data update and validation.
-- `quiz.config`: Sensitive settings (API keys, AI parameters, etc).
-- `requirements.txt`: Project dependencies.
-- `templates/`: HTML templates for the app.
-
-## Security
-- **Authentication**: Users and admins are authenticated via Flask-Login.
-- **API Keys**: Never expose your OpenAI key publicly.
-
-## Contributing
-Open issues or pull requests to suggest improvements!
 
 ---
 
