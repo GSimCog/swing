@@ -126,9 +126,9 @@ Open issues or pull requests to suggest improvements!
 
 ---
 
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img01.png" width="300">
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img02.png" width="300">
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img03.png" width="300">
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img04.png" width="900">
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img05.png" width="1600">
-<img src="https://github.com/GSimCog/swing/blob/main/extra/img06.png" width="300">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img01.png" width="1024">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img02.png" width="1024">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img03.png" width="1024">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img04.png" width="1024">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img05.png" width="1024">
+<img src="https://github.com/GSimCog/swing/blob/main/extra/img06.png" width="1024">
