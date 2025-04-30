@@ -1,0 +1,336 @@
+key,country,value,ai_confidence
+flag_image,Jamaica,https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg,90
+official_Language_label,Jamaica,English,95
+flag_image,State of Palestine,https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg,90
+official_Language_label,State of Palestine,Arabic,95
+highest_point_label,State of Palestine,Mount Nabi Yunis,85
+official_Language_label,Serbia,Serbian,95
+official_Language_label,Grenada,English,95
+official_Language_label,Ecuador,Spanish,95
+official_Language_label,Bolivia,Spanish or Quechua or Aymara or Guarani,90
+flag_image,Singapore,https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg,90
+anthem_audio,Singapore,unknown,0
+official_Language_label,Singapore,English or Malay or Mandarin or Tamil,90
+official_Language_label,Iran,Persian,95
+flag_image,Federated States of Micronesia,https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg,90
+official_Language_label,Federated States of Micronesia,English,90
+flag_image,Jordan,https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg,90
+official_Language_label,Jordan,Arabic,95
+anthem_audio,Tuvalu,unknown,0
+official_Language_label,Tuvalu,Tuvaluan or English,90
+flag_image,Colombia,https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg,90
+official_Language_label,Colombia,Spanish,95
+official_Language_label,Haiti,Haitian Creole or French,95
+flag_image,Nauru,https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg,90
+anthem_audio,Nauru,unknown,0
+official_Language_label,Nauru,Nauruan or English,90
+flag_image,Antigua and Barbuda,https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg,90
+official_Language_label,Antigua and Barbuda,English,95
+flag_image,Kiribati,https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg,90
+anthem_audio,Kiribati,unknown,0
+official_Language_label,Kiribati,Gilbertese or English,90
+official_Language_label,Saint Lucia,English,95
+flag_image,Panama,https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg,90
+official_Language_label,Panama,Spanish,95
+official_Language_label,Kingdom of Denmark,Danish,95
+flag_image,Vanuatu,https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Vanuatu.svg,90
+official_Language_label,Vanuatu,Bislama or English or French,90
+flag_image,Myanmar,https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg,90
+official_Language_label,Myanmar,Burmese,95
+flag_image,New Zealand,https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg,90
+official_Language_label,New Zealand,English or Maori or New Zealand Sign Language,95
+flag_image,North Korea,https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg,90
+anthem_audio,North Korea,unknown,0
+official_Language_label,North Korea,Korean,95
+flag_image,Tonga,https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg,90
+official_Language_label,Tonga,Tongan or English,95
+flag_image,Australia,https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg,90
+official_Language_label,Australia,English,90
+flag_image,Pakistan,https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg,90
+official_Language_label,Pakistan,Urdu or English,90
+official_Language_label,Bahrain,Arabic,95
+flag_image,East Timor,https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg,90
+official_Language_label,East Timor,Tetum or Portuguese,95
+official_Language_label,Paraguay,Spanish or Guarani,95
+flag_image,Papua New Guinea,unknown,0
+anthem_audio,Papua New Guinea,unknown,0
+official_Language_label,Papua New Guinea,Tok Pisin or English or Hiri Motu,90
+flag_image,Chile,https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg,90
+official_Language_label,Chile,Spanish,95
+flag_image,Sri Lanka,https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg,90
+official_Language_label,Sri Lanka,Sinhala or Tamil,95
+flag_image,Mongolia,https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg,90
+anthem_audio,Mongolia,unknown,0
+official_Language_label,Mongolia,Mongolian,95
+anthem_audio,Kuwait,unknown,0
+official_Language_label,Kuwait,Arabic,95
+official_Language_label,Dominica,English,95
+official_Language_label,South Africa,isiZulu or isiXhosa or Afrikaans or English or Sesotho sa Leboa or Setswana or Sesotho or Xitsonga or siSwati or Tshivenda or isiNdebele,90
+flag_image,Yemen,https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg,90
+official_Language_label,Yemen,Arabic,95
+official_Language_label,Maldives,Dhivehi,95
+anthem_audio,Taiwan,unknown,0
+official_Language_label,Taiwan,Mandarin,95
+flag_image,Nepal,https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg,90
+anthem_audio,Nepal,unknown,0
+official_Language_label,Nepal,Nepali,95
+flag_image,Fiji,https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg,90
+official_Language_label,Fiji,English or Fijian or Hindi,90
+flag_image,Saint Kitts and Nevis,https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Saint_Kitts_and_Nevis.svg,90
+official_Language_label,Saint Kitts and Nevis,English,95
+flag_image,Nicaragua,https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg,90
+official_Language_label,Nicaragua,Spanish,95
+anthem_audio,Costa Rica,unknown,0
+official_Language_label,Costa Rica,Spanish,95
+flag_image,Uzbekistan,https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg,90
+official_Language_label,Uzbekistan,Uzbek,95
+flag_image,Guyana,https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg,90
+official_Language_label,Guyana,English,95
+flag_image,Qatar,https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg,90
+official_Language_label,Qatar,Arabic,95
+official_Language_label,El Salvador,Spanish,95
+official_Language_label,Cambodia,Khmer,95
+flag_image,Laos,https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg,90
+official_Language_label,Laos,Lao,95
+official_Language_label,Peru,Spanish or Quechua or Aymara,95
+flag_image,Chad,https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg,90
+official_Language_label,Chad,French or Arabic,90
+official_Language_label,The Bahamas,English,95
+flag_image,Tajikistan,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Tajikistan.svg/1920px-Flag_of_Tajikistan.svg.png,90
+official_Language_label,Tajikistan,Tajik,95
+official_Language_label,Turkmenistan,Turkmen,95
+official_Language_label,Honduras,Spanish,95
+flag_image,Thailand,https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg,90
+official_Language_label,Thailand,Thai,95
+flag_image,Guatemala,https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg,90
+official_Language_label,Guatemala,Spanish,95
+official_Language_label,Oman,Arabic,95
+official_Language_label,Argentina,Spanish,95
+flag_image,Suriname,https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg,90
+official_Language_label,Suriname,Dutch,95
+official_Language_label,Liechtenstein,German,95
+flag_image,Marshall Islands,https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg,90
+official_Language_label,Marshall Islands,Marshallese or English,95
+flag_image,Armenia,https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg,90
+official_Language_label,Armenia,Armenian,95
+anthem_audio,Iraq,unknown,0
+official_Language_label,Iraq,Arabic or Kurdish,95
+flag_image,Samoa,https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg,90
+anthem_audio,Samoa,unknown,0
+official_Language_label,Samoa,Samoan or English,90
+flag_image,Algeria,https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg,90
+official_Language_label,Algeria,Arabic or Berber,90
+flag_image,Dominican Republic,https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg,90
+official_Language_label,Dominican Republic,Spanish,95
+flag_image,Palau,https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg,90
+anthem_audio,Palau,unknown,0
+official_Language_label,Palau,Palauan or English,90
+flag_image,Saint Vincent and the Grenadines,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg/1200px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png,90
+official_Language_label,Saint Vincent and the Grenadines,English,95
+flag_image,Trinidad and Tobago,https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg,90
+anthem_audio,Trinidad and Tobago,unknown,0
+official_Language_label,Trinidad and Tobago,English,95
+official_Language_label,Kyrgyzstan,Kyrgyz or Russian,90
+official_Language_label,Venezuela,Spanish,95
+official_Language_label,Syria,Arabic,95
+flag_image,Solomon Islands,https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_the_Solomon_Islands.svg,90
+anthem_audio,Solomon Islands,unknown,0
+official_Language_label,Solomon Islands,English,90
+flag_image,United Arab Emirates,https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg,90
+anthem_audio,United Arab Emirates,unknown,0
+official_Language_label,United Arab Emirates,Arabic,95
+flag_image,India,https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg,90
+official_Language_label,India,Hindi or English,90
+official_Language_label,Malaysia,Malay,95
+flag_image,Slovenia,https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg,90
+flag_image,Eswatini,https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg,90
+official_Language_label,Eswatini,Swazi or English,95
+flag_image,Montenegro,https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg,90
+currency_label,realm of the United Kingdom,pound sterling,95
+population,realm of the United Kingdom,unknown,0
+anthem_audio,realm of the United Kingdom,unknown,0
+continent_label,realm of the United Kingdom,Europe,90
+highest_point_label,realm of the United Kingdom,Ben Nevis,95
+anthem_audio,United Kingdom,unknown,0
+flag_image,Cuba,https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg,90
+official_Language_label,Cuba,Spanish,95
+flag_image,Israel,https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg,90
+official_Language_label,Cyprus,Greek or Turkish,90
+flag_image,Indonesia,https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg,90
+anthem_audio,Indonesia,unknown,0
+official_Language_label,Indonesia,Indonesian,95
+official_Language_label,Vatican City,Latin or Italian,90
+flag_image,Kazakhstan,https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg,90
+official_Language_label,Kazakhstan,Kazakh or Russian,90
+flag_image,Monaco,unknown,0
+official_Language_label,Monaco,French,95
+flag_image,Moldova,https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg,90
+anthem_audio,Moldova,unknown,0
+official_Language_label,San Marino,Italian,95
+flag_image,Andorra,https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg,90
+official_Language_label,Andorra,Catalan,95
+anthem_audio,Barbados,unknown,0
+official_Language_label,Barbados,English,95
+flag_image,Kingdom of the Netherlands,https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg,90
+official_Language_label,Kingdom of the Netherlands,Dutch,95
+official_Language_label,Georgia,Georgian,95
+anthem_audio,Bosnia and Herzegovina,unknown,0
+official_Language_label,Bosnia and Herzegovina,Bosnian or Croatian or Serbian,90
+flag_image,Belize,https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg,90
+official_Language_label,Belize,English,95
+flag_image,Malta,https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg,90
+official_Language_label,Malta,Maltese or English,95
+flag_image,Sweden,https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg,90
+flag_image,Lebanon,https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg,90
+official_Language_label,Tunisia,Arabic,95
+anthem_audio,Mauritania,unknown,0
+official_Language_label,Mauritania,Arabic,90
+flag_image,Liberia,https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg,90
+official_Language_label,Liberia,English,95
+flag_image,Vietnam,https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg,90
+official_Language_label,Vietnam,Vietnamese,95
+flag_image,Republic of Ireland,https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg,90
+official_Language_label,Republic of Ireland,Irish or English,95
+official_Language_label,Zambia,English,95
+flag_image,Niger,https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg,90
+anthem_audio,Niger,unknown,0
+official_Language_label,Niger,French,95
+flag_image,Turkey,https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg,90
+official_Language_label,Turkey,Turkish,100
+flag_image,Madagascar,https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg,90
+official_Language_label,Madagascar,Malagasy or French,90
+official_Language_label,Democratic Republic of the Congo,French,95
+flag_image,Republic of the Congo,https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg,90
+official_Language_label,Republic of the Congo,French,95
+anthem_audio,Ukraine,unknown,0
+official_Language_label,Ukraine,Ukrainian,95
+official_Language_label,Mexico,Spanish,95
+official_Language_label,Belarus,Belarusian or Russian,90
+flag_image,People's Republic of China,https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_China.svg,90
+official_Language_label,People's Republic of China,Mandarin,95
+official_Language_label,Japan,Japanese,100
+official_Language_label,Azerbaijan,Azerbaijani,95
+official_Language_label,Sudan,Arabic or English,85
+flag_image,Central African Republic,https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg,90
+anthem_audio,Central African Republic,unknown,0
+official_Language_label,Central African Republic,French or Sango,95
+official_Language_label,Nigeria,English,95
+official_Language_label,Bulgaria,Bulgarian,95
+official_Language_label,France,French,100
+flag_image,Namibia,https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg,90
+anthem_audio,Namibia,unknown,0
+official_Language_label,Namibia,English,95
+flag_image,Bhutan,https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg,90
+anthem_audio,Bhutan,unknown,0
+official_Language_label,Bhutan,Dzongkha,95
+flag_image,São Tomé and Príncipe,https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg,90
+anthem_audio,São Tomé and Príncipe,unknown,0
+official_Language_label,São Tomé and Príncipe,Portuguese,95
+official_Language_label,Brunei Darussalam,Malay,95
+flag_image,Eritrea,https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg,90
+official_Language_label,Eritrea,Tigrinya or Arabic or English,85
+official_Language_label,Philippines,Filipino or English,90
+flag_image,Mozambique,https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg,90
+official_Language_label,Mozambique,Portuguese,95
+flag_image,Kenya,https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg,90
+official_Language_label,Kenya,Swahili or English,95
+official_Language_label,Hungary,Hungarian,95
+official_Language_label,Austria,German,95
+official_Language_label,Romania,Romanian,95
+official_Language_label,Portugal,Portuguese,100
+anthem_audio,Afghanistan,unknown,0
+official_Language_label,Afghanistan,Pashto or Dari,90
+official_Language_label,Belgium,Dutch or French or German,95
+official_Language_label,Cape Verde,Portuguese,95
+official_Language_label,Ethiopia,Amharic,90
+anthem_audio,Togo,unknown,0
+official_Language_label,Togo,French,95
+flag_image,Uruguay,https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg,90
+official_Language_label,Uruguay,Spanish,95
+flag_image,Latvia,https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg,90
+official_Language_label,Latvia,Latvian,95
+official_Language_label,Lithuania,Lithuanian,95
+official_Language_label,Malawi,English or Chichewa,90
+official_Language_label,Egypt,Arabic,95
+flag_image,Guinea,https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg,90
+official_Language_label,Guinea,French,95
+official_Language_label,Rwanda,Kinyarwanda or French or English or Swahili,90
+flag_image,Sierra Leone,https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg,90
+anthem_audio,Sierra Leone,unknown,0
+official_Language_label,Sierra Leone,English,95
+official_Language_label,Canada,English or French,95
+anthem_audio,Lesotho,unknown,0
+official_Language_label,Lesotho,Sesotho or English,95
+flag_image,Senegal,https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg,90
+anthem_audio,Senegal,unknown,0
+official_Language_label,Senegal,French,95
+flag_image,Burundi,https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg,90
+anthem_audio,Burundi,unknown,0
+official_Language_label,Burundi,Kirundi or French or English,90
+flag_image,Finland,https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg,90
+official_Language_label,Finland,Finnish or Swedish,95
+official_Language_label,Benin,French,95
+flag_image,Somalia,https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg,90
+official_Language_label,Somalia,Somali or Arabic,90
+flag_image,Luxembourg,https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg,90
+official_Language_label,Luxembourg,Luxembourgish or French or German,90
+official_Language_label,Iceland,Icelandic,95
+official_Language_label,Gabon,French,95
+flag_image,Slovakia,https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg,90
+official_Language_label,Slovakia,Slovak,95
+flag_image,South Sudan,https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg,90
+official_Language_label,South Sudan,English,95
+flag_image,Ivory Coast,https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Cote_d%27Ivoire.svg,90
+anthem_audio,Ivory Coast,unknown,0
+official_Language_label,Ivory Coast,French,95
+flag_image,Cameroon,https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg,90
+anthem_audio,Cameroon,unknown,0
+official_Language_label,Cameroon,English or French,90
+flag_image,Mauritius,https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Mauritius.svg,90
+official_Language_label,Mauritius,English,90
+official_Language_label,South Korea,Korean,100
+official_Language_label,Ghana,English,95
+flag_image,Mali,https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg,90
+official_Language_label,Mali,French,95
+flag_image,Angola,https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg,90
+anthem_audio,Angola,unknown,0
+official_Language_label,Angola,Portuguese,95
+official_Language_label,Equatorial Guinea,Spanish or French or Portuguese,90
+flag_image,Norway,https://upload.wikimedia.org/wikipedia/en/d/d9/Flag_of_Norway.svg,90
+official_Language_label,Norway,Norwegian or Sami,90
+flag_image,Morocco,https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg,90
+official_Language_label,Morocco,Arabic or Amazigh,95
+flag_image,Burkina Faso,https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg,90
+anthem_audio,Burkina Faso,unknown,0
+official_Language_label,Burkina Faso,French,95
+official_Language_label,Italy,Italian,100
+official_Language_label,Greece,Greek,100
+official_Language_label,Comoros,Comorian or Arabic or French,90
+flag_image,Botswana,https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg,90
+official_Language_label,Botswana,English or Setswana,90
+flag_image,Czech Republic,https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg,90
+official_Language_label,Czech Republic,Czech,95
+flag_image,Estonia,https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg,90
+official_Language_label,Estonia,Estonian,95
+official_Language_label,Switzerland,German or French or Italian or Romansh,95
+anthem_audio,North Macedonia,unknown,0
+official_Language_label,North Macedonia,Macedonian or Albanian,90
+official_Language_label,Seychelles,Seychellois Creole or English or French,90
+official_Language_label,Germany,German,100
+official_Language_label,Uganda,English or Swahili,90
+anthem_audio,Zimbabwe,unknown,0
+official_Language_label,Zimbabwe,Chewa or Chibarwe or English or Kalanga or Koisan or Nambya or Ndau or Ndebele or Shangani or Shona or Sotho or Tonga or Tswana or Venda or Xhosa or Zimbabwean Sign Language,90
+official_Language_label,Croatia,Croatian,95
+official_Language_label,Bangladesh,Bengali,95
+flag_image,The Gambia,https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg,90
+anthem_audio,The Gambia,unknown,0
+official_Language_label,The Gambia,English,90
+highest_point_label,The Gambia,Red Rock,85
+flag_image,Tanzania,https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg,90
+official_Language_label,Tanzania,Swahili or English,90
+flag_image,Djibouti,https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg,90
+official_Language_label,Djibouti,French or Arabic,90
+official_Language_label,Albania,Albanian,95
+flag_image,Guinea-Bissau,https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg,90
+anthem_audio,Guinea-Bissau,unknown,0
+official_Language_label,Guinea-Bissau,Portuguese,95

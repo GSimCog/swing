@@ -1,0 +1,71 @@
+    keywords_to_prompts = {
+        "capital": (
+            "What is the capital of (the) **, without abbreviations, commas, or periods? "
+            "Give me the answer as currently as possible with only the capital name. "
+            "If there is more than one, give me only the capital names separated by the word 'or'. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "currency": (
+            "What is the currency of (the) **, without abbreviations, commas, or periods? "
+            "Give me the answer as currently as possible with only the currency name. "
+            "If there is more than one, give me only the currency names separated by the word 'or'. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "population": (
+            "What is the exact numeric population of (the) ** in digits, without abbreviations, commas, or periods? "
+            "Give me the answer as currently as possible in digits; only one number. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "language": (
+            "What is the official language of (the) **, without abbreviations, commas, or periods? "
+            "Give me the answer as currently as possible with only the language name. "
+            "If there is more than one, give me only the language names separated by the word 'or'. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "continent": (
+            "Which continent does (the) ** belong to? Without abbreviations, commas, or periods. "
+            "Give me the answer as currently as possible with only the continent name. "
+            "If there is more than one, give me only the continent names separated by the word 'or'. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "highest point": (
+            "What is the highest point of (the) **, without abbreviations, commas, or periods? "
+            "Give me the answer as currently as possible with only the highest point name. "
+            "If there is more than one, give me only the highest point names separated by the word 'or'. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "flag": (
+            "Provide one URL of the official flag as currently as possible of (the) **. "
+            "This URL must refer to a web image file such as SVG, JPG, or PNG. Provide only the URL. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+        "anthem": (
+            "Provide one URL of the official anthem as currently as possible of (the) **. "
+            "This URL must refer to a web sound file such as OGG. Provide only the URL. "
+            "After your answer, append a '|' and your confidence percentage (only numbers between 0 and 100). "
+            "If you are not sure, or if the answer is ambiguous, use a lower confidence value. "
+            "If you do not know, answer 'unknown|0'. "
+            "Be honest: do not inflate your confidence."
+        ),
+    }
