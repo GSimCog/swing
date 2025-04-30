@@ -45,8 +45,37 @@ app = Flask(__name__)
 # Configuração da chave secreta do aplicativo
 app.config['SECRET_KEY'] = os.urandom(24)
 
+# --- HISTÓRICO ADMINISTRATIVO ---
+from math import ceil
+
+@app.route('/admin/history')
+@login_required
+def admin_history():
+    if current_user.username != 'admin':
+        return redirect(url_for('home'))
+    # Paginação
+    try:
+        page = int(request.args.get('page', 1))
+    except Exception:
+        page = 1
+    per_page = 25
+    max_entries = 150
+    # Buscar as 150 últimas operações
+    entries = CountryQuizUpdatesHistory.query.order_by(CountryQuizUpdatesHistory.timestamp.desc()).limit(max_entries).all()
+    total_entries = len(entries)
+    total_pages = ceil(total_entries / per_page)
+    start = (page - 1) * per_page
+    end = start + per_page
+    history_entries = entries[start:end]
+    return render_template(
+        'admin_history.html',
+        history_entries=history_entries,
+        page=page,
+        total_pages=total_pages
+    )
+
 # Configuração da URI do banco de dados
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiz.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiz.db?check_same_thread=False'
 
 # Inicialização do banco de dados SQLAlchemy
 db = SQLAlchemy(app)
