@@ -1,13 +1,11 @@
 """
-Módulo responsável por atualizar e gerenciar dados do quiz relacionados a países, utilizando IA generativa e bancos de dados semânticos.
+Quiz Data Update Module
 
-Principais funcionalidades:
-- Atualização de perguntas reportadas com respostas da IA.
-- Atualização de lacunas de países com dados de IA.
-- Sincronização do banco de dados do quiz com fontes externas (DBpedia, Wikidata).
-- Geração de arquivos CSV para auditoria.
-
-Todas as docstrings seguem o padrão Google para facilitar manutenção e colaboração.
+- Responsável por atualizar e gerenciar dados do quiz de países, integrando IA generativa (OpenAI) e bancos de dados semânticos (DBpedia, Wikidata).
+- Implementa lógica de confiança da IA (ai_confidence_threshold): respostas da IA com confiança >= threshold são aprovadas e propagadas automaticamente; abaixo disso, são encaminhadas para revisão manual/admin.
+- Atualiza perguntas reportadas, blanks de países, sincroniza dados do quiz, gera histórico de alterações e arquivos CSV para auditoria/admin.
+- Diferencia fluxos automáticos e manuais, com logging detalhado e integração com modelos de dados do app.
+- Todas as docstrings seguem o padrão Google para facilitar manutenção e colaboração.
 """
 
 from sqlalchemy import create_engine, and_
@@ -61,12 +59,12 @@ def determine_prompt(question_text):
             return prompt
     return "DEFAULT_PROMPT"
 
-# Atualiza perguntas reportadas no banco que ainda não possuem resposta gerada pela IA.
 def update_reported_questions_with_ai():
     """
     Atualiza perguntas reportadas sem resposta da IA, consultando o modelo generativo e salvando o resultado.
 
     Para cada pergunta reportada sem resposta, gera um prompt adequado, envia para a OpenAI, salva a resposta e registra logs.
+    Se a resposta da IA atingir o limiar de confiança (ai_confidence_threshold), pode ser aprovada automaticamente; caso contrário, permanece para revisão manual/admin.
 
     Returns:
         None
@@ -100,10 +98,9 @@ def update_reported_questions_with_ai():
 
 def parse_ai_response(ai_response):
     """
-    Extrai o valor e a confiança de uma resposta da IA no formato 'valor|confiança'.
+    Extrai o valor e o score de confiança de uma resposta da IA no formato 'valor|confiança'.
 
-    Se a resposta estiver no formato 'valor|confiança', separa o valor e converte a confiança para inteiro.
-    Caso contrário, retorna apenas o valor e None para a confiança.
+    Utilizado para separar a resposta gerada pela IA (valor sugerido) do score de confiança retornado, que é fundamental para o fluxo de aprovação automática/manual.
 
     Args:
         ai_response (str): Resposta da IA no formato 'valor|confiança' ou apenas 'valor'.

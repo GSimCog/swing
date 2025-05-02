@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complementos de Onboarding - Quiz App</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7f7; color: #222; max-width: 900px; margin: 0 auto; padding: 24px; }
+    h1, h2, h3 { color: #1976d2; }
+    pre, code { background: #e3e3e3; border-radius: 4px; padding: 2px 6px; }
+    section { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; margin-bottom: 2em; padding: 1.5em; }
+    ul, ol { margin-bottom: 1.2em; }
+    .diagram { background: #f3f3f3; border: 1px solid #ddd; border-radius: 6px; padding: 1em; margin: 1em 0; font-family: monospace; font-size: 0.98em; overflow-x: auto; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181818; color: #f4f4f4; }
+      section { background: #232323; }
+      pre, code, .diagram { background: #222; color: #90caf9; border-color: #333; }
+      h1, h2, h3 { color: #90caf9; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Complementos de Onboarding — Quiz App</h1>
+
+  <section>
+    <h2>1. Exemplo de Uso de Endpoints (API)</h2>
+    <h3>Login</h3>
+    <pre><code>POST /login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=suasenha</code></pre>
+    <h3>Registrar Usuário</h3>
+    <pre><code>POST /register
+Content-Type: application/x-www-form-urlencoded
+
+username=novo_usuario&password=senha123&email=usuario@email.com</code></pre>
+    <h3>Quiz</h3>
+    <pre><code>GET /         # Página do quiz (autenticado)
+POST /        # Envia resposta do usuário para a questão atual</code></pre>
+    <h3>Admin Tools</h3>
+    <pre><code>GET /admin/tools          # Painel admin (autenticado como admin)
+GET /admin/history        # Histórico de operações admin
+POST /admin/run_update/&lt;acao&gt;  # Executa rotina batch admin</code></pre>
+  </section>
+
+  <section>
+    <h2>2. Exemplo de Uso de Funções Python</h2>
+    <h3>Atualizar perguntas reportadas com IA</h3>
+    <pre><code>from data_update import update_reported_questions_with_ai
+update_reported_questions_with_ai()</code></pre>
+    <h3>Atualizar blanks de países com IA</h3>
+    <pre><code>from data_update import update_country_blanks_from_semanticdatabase_with_ai
+update_country_blanks_from_semanticdatabase_with_ai()</code></pre>
+  </section>
+
+  <section>
+    <h2>3. Exemplo de quiz.config</h2>
+    <pre><code>[settings]
+database = WIKIDATA
+openai_api_key = SUA_CHAVE_OPENAI
+ai_confidence_threshold = 90
+dbpedia_sparql_query = https://dbpedia.org/sparql
+wikidata_sparql_query = https://query.wikidata.org/sparql
+</code></pre>
+    <ul>
+      <li><b>database</b>: Fonte principal de dados (WIKIDATA ou DBPEDIA).</li>
+      <li><b>openai_api_key</b>: Chave de API para acesso ao modelo generativo.</li>
+      <li><b>ai_confidence_threshold</b>: Score mínimo para aprovação automática de sugestões da IA.</li>
+      <li><b>dbpedia_sparql_query</b>, <b>wikidata_sparql_query</b>: Endpoints SPARQL das fontes externas.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Setup do Ambiente</h2>
+    <ol>
+      <li>Clone o repositório e acesse a pasta <code>quiz_v3</code>.</li>
+      <li>Crie e ative um ambiente virtual Python:<br>
+        <code>python -m venv .venv<br>source .venv/bin/activate  # Linux/Mac<br>.venv\Scripts\activate   # Windows</code>
+      </li>
+      <li>Instale as dependências:<br><code>pip install -r requirements.txt</code></li>
+      <li>Configure o arquivo <code>quiz.config</code> conforme o exemplo acima.</li>
+      <li>Execute o app:<br><code>python app.py</code></li>
+    </ol>
+    <p>Para rodar rotinas batch de atualização, execute:<br>
+      <code>python -c "from data_update import update_reported_questions_with_ai; update_reported_questions_with_ai()"</code>
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Diagrama de Arquitetura (Simplificado)</h2>
+    <div class="diagram">
+      Usuário/Admin<br>
+      &darr;<br>
+      <b>Flask App (app.py)</b><br>
+      &darr;<br>
+      <b>Banco de Dados (SQLAlchemy/SQLite)</b><br>
+      &uarr; &darr;<br>
+      <b>data_update.py</b> &harr; <b>OpenAI API</b><br>
+      &darr;<br>
+      <b>Wikidata/DBpedia</b> (SPARQL)<br>
+      <br>
+      <b>Painel Admin</b> &rarr; Histórico &amp; Aprovação Manual<br>
+      <b>Quiz</b> &rarr; Perguntas &amp; Respostas<br>
+      <b>Rotinas Batch</b> &rarr; Atualização Automática
+    </div>
+    <p><b>Legenda:</b> &rarr; fluxo principal, &harr; integração bidirecional, &uarr;&darr; leitura/escrita, negrito = componente principal.</p>
+  </section>
+
+  <section>
+    <h2>6. Troubleshooting e Dicas</h2>
+    <ul>
+      <li>Verifique se o arquivo <code>quiz.config</code> está corretamente preenchido e acessível.</li>
+      <li>Erros de banco de dados geralmente indicam falta de permissões ou problemas de conexão SQLite.</li>
+      <li>Para logs detalhados, rode o app com <code>debug=True</code> em <code>app.py</code>.</li>
+      <li>Se a integração com OpenAI falhar, revise a chave <code>openai_api_key</code> e conexão de internet.</li>
+      <li>Para dúvidas sobre os modelos de dados, consulte a documentação técnica HTML principal.</li>
+    </ul>
+  </section>
+
+  <footer style="margin-top:3em;font-size:0.97em;color:#888;text-align:center;">
+    &copy; 2025 Complementos de Onboarding gerados automaticamente.<br>
+    Projeto Quiz App
+  </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentação Técnica - Quiz App</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7f7; color: #222; max-width: 900px; margin: 0 auto; padding: 24px; }
+    h1, h2, h3 { color: #1976d2; }
+    pre, code { background: #e3e3e3; border-radius: 4px; padding: 2px 6px; }
+    section { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; margin-bottom: 2em; padding: 1.5em; }
+    dt { font-weight: bold; }
+    dd { margin-bottom: 0.7em; }
+    .file-title { margin-top: 2em; border-bottom: 2px solid #1976d2; padding-bottom: 0.2em; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181818; color: #f4f4f4; }
+      section { background: #232323; }
+      pre, code { background: #222; color: #90caf9; }
+      h1, h2, h3 { color: #90caf9; }
+      .file-title { border-color: #90caf9; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Documentação Técnica — Quiz App</h1>
+  <p>Gerado automaticamente a partir das docstrings e comentários dos arquivos <b>app.py</b> e <b>data_update.py</b>.</p>
+
+  <section>
+    <h2 class="file-title">app.py</h2>
+    <h3>Visão Geral</h3>
+    <ul>
+      <li>Inicialização do app Flask, banco de dados, autenticação e principais dependências.</li>
+      <li>Define modelos de dados, rotas de quiz, login, administração e histórico.</li>
+      <li>Integração com fontes externas (Wikidata/DBpedia) e IA (OpenAI) para preenchimento automático de dados faltantes.</li>
+      <li>Implementa lógica de confiança da IA (<code>ai_confidence_threshold</code>): respostas da IA com confiança &gt;= threshold são propagadas diretamente; abaixo disso, vão para revisão manual (<code>ReportedQuestions</code>).</li>
+      <li>Diferencia fluxos para usuários comuns e administradores, com painel admin, histórico e ações batch.</li>
+      <li>Todas as docstrings seguem padrão Google para facilitar manutenção e colaboração.</li>
+    </ul>
+    <h3>Principais Modelos</h3>
+    <dl>
+      <dt>User</dt>
+      <dd>Modelo de usuário do sistema. Campos: id, username, password, email, score, timestamp.</dd>
+      <dt>ReportedQuestion</dt>
+      <dd>Modelo para perguntas reportadas ou sugestões da IA para revisão manual. Entradas criadas quando a confiança da IA é menor que o threshold.</dd>
+      <dt>CountryQuiz</dt>
+      <dd>Modelo para dados de quiz de países. Campos: id, country_label, data, timestamp.</dd>
+      <dt>CountryBlanksFromSemanticDatabase</dt>
+      <dd>Gerencia lacunas (blanks) nos dados de países, preenchidas via IA ou manualmente. Se <code>ai_confidence</code> &gt;= threshold, pode ser aprovado automaticamente.</dd>
+      <dt>CountryQuizUpdatesHistory</dt>
+      <dd>Histórico de atualizações dos quizzes de países. Campos: id, function_name, country_label, key, old_data, new_data, ai_confidence, timestamp.</dd>
+    </dl>
+    <h3>Principais Rotas e Funções</h3>
+    <ul>
+      <li><b>admin_tools</b>: Painel administrativo para histórico, aprovação de sugestões, atualizações batch e logs em tempo real.</li>
+      <li><b>quiz</b>: Rota do quiz. Gera perguntas, avalia respostas, registra erros/reportes.</li>
+      <li><b>approve_question / bypass_question</b>: Aprovação manual/admin de sugestões da IA ou de usuários.</li>
+      <li><b>country_updates / approve_country_update</b>: Gestão e aprovação de atualizações de dados de países.</li>
+      <li><b>request_or_load_country_data</b>: Carrega dados do banco ou fontes externas.</li>
+      <li><b>login / register / logout</b>: Autenticação de usuários.</li>
+      <li><b>Histórico administrativo</b>: Todas as alterações relevantes são registradas para auditoria.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="file-title">data_update.py</h2>
+    <h3>Visão Geral</h3>
+    <ul>
+      <li>Atualiza e gerencia dados do quiz de países, integrando IA generativa (OpenAI) e bancos de dados semânticos (DBpedia, Wikidata).</li>
+      <li>Implementa lógica de confiança da IA (<code>ai_confidence_threshold</code>): respostas da IA com confiança &gt;= threshold são aprovadas e propagadas automaticamente; abaixo disso, vão para revisão manual/admin.</li>
+      <li>Atualiza perguntas reportadas, blanks de países, sincroniza dados do quiz, gera histórico de alterações e arquivos CSV para auditoria/admin.</li>
+      <li>Diferencia fluxos automáticos e manuais, com logging detalhado e integração com modelos de dados do app.</li>
+      <li>Todas as docstrings seguem padrão Google para facilitar manutenção e colaboração.</li>
+    </ul>
+    <h3>Principais Funções</h3>
+    <dl>
+      <dt>determine_prompt(question_text)</dt>
+      <dd>Retorna o prompt adequado para uma pergunta sobre país, com base em palavras-chave identificadas no texto.</dd>
+      <dt>parse_ai_response(ai_response)</dt>
+      <dd>Extrai o valor e o score de confiança de uma resposta da IA no formato <code>valor|confiança</code>. Fundamental para o fluxo de aprovação automática/manual.</dd>
+      <dt>update_reported_questions_with_ai()</dt>
+      <dd>Atualiza perguntas reportadas sem resposta da IA, consultando o modelo generativo e salvando o resultado. Aprova automaticamente se confiança &gt;= threshold.</dd>
+      <dt>update_country_blanks_from_semanticdatabase_with_ai()</dt>
+      <dd>Atualiza blanks de países utilizando IA. Aprova automaticamente se confiança &gt;= threshold, senão envia para revisão manual.</dd>
+      <dt>update_countryQuiz_from_approved_questions()</dt>
+      <dd>Propaga respostas aprovadas de perguntas reportadas para o banco principal do quiz. Aprovação manual/admin é permitida independentemente da confiança.</dd>
+      <dt>update_countryQuiz_from_approved_blanks()</dt>
+      <dd>Propaga respostas aprovadas de blanks de países para o banco principal do quiz. Diferencia origem manual e IA para auditoria.</dd>
+      <dt>update_new_country_data_from_semanticdatabase_in_countryQuiz()</dt>
+      <dd>Sincroniza o quiz com novos dados de países obtidos de fontes externas. Adiciona, atualiza e remove países conforme necessário, registrando histórico.</dd>
+      <dt>generate_csv_from_country_blanks_of_semanticdatabase()</dt>
+      <dd>Gera arquivo CSV contendo respostas da IA para blanks de países, para auditoria externa.</dd>
+    </dl>
+    <h3>Observações Gerais</h3>
+    <ul>
+      <li>Utiliza SQLAlchemy para manipulação do banco de dados SQLite.</li>
+      <li>Score de confiança da IA é fundamental para decidir se uma sugestão é aprovada automaticamente ou encaminhada para revisão manual/admin.</li>
+      <li>Todas as operações relevantes são logadas e, quando aplicável, registradas em histórico para auditoria.</li>
+      <li>Pode ser executado standalone para rotinas batch, mas normalmente é importado e chamado pelo backend Flask principal.</li>
+    </ul>
+  </section>
+
+  <footer style="margin-top:3em;font-size:0.97em;color:#888;text-align:center;">
+    &copy; 2025 Documentação Técnica gerada automaticamente a partir do código-fonte.<br>
+    Projeto Quiz App — <code>app.py</code> &amp; <code>data_update.py</code>
+  </footer>
+</body>
+</html>

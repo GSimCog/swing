@@ -1,8 +1,12 @@
 """
-Configuração e inicialização do aplicativo Flask, banco de dados e principais dependências.
-Inclui definição de modelos, rotas, autenticação e integração com ferramentas de atualização de dados do quiz.
+Quiz App Backend (Flask)
 
-Todas as docstrings seguem padrão Google para facilitar manutenção e colaboração.
+- Inicialização do app Flask, banco de dados, autenticação e principais dependências.
+- Define modelos de dados, rotas de quiz, login, administração e histórico.
+- Integração com fontes externas (Wikidata/DBpedia) e IA (OpenAI) para preenchimento automático de dados faltantes.
+- Implementa lógica de confiança da IA (ai_confidence_threshold): respostas da IA com confiança >= threshold são propagadas diretamente; abaixo disso, vão para revisão manual (ReportedQuestions).
+- Diferencia fluxos para usuários comuns e administradores, com painel admin, histórico e ações batch.
+- Todas as docstrings seguem padrão Google para facilitar manutenção e colaboração.
 """
 
 import os
@@ -121,9 +125,11 @@ class ReportedQuestion(db.Model):
         country (str): País relacionado.
         correct_answer (str): Resposta correta conhecida (se houver).
         value_from_ai (str): Valor sugerido pela IA.
-        approved (bool): Se a sugestão foi aprovada manualmente.
-        value_updated (bool): Se a sugestão foi propagada ao quiz.
+        approved (bool): Se a sugestão foi aprovada manualmente pelo admin.
+        value_updated (bool): Se a sugestão foi propagada ao quiz após aprovação manual.
         timestamp (datetime): Data/hora do registro.
+    Observação:
+        Entradas são criadas quando a confiança da IA é menor que ai_confidence_threshold.
     """
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
@@ -179,10 +185,12 @@ class CountryBlanksFromSemanticDatabase(db.Model):
         key (str): Campo da lacuna.
         current_value (str): Valor atual do campo.
         value_from_ai (str): Valor sugerido pela IA.
-        ai_confidence (int): Confiança da IA (0-100).
-        approved (bool): Se o valor foi aprovado (por IA ou manualmente).
+        ai_confidence (int): Confiança da IA (0-100). Se >= ai_confidence_threshold, pode ser aprovado automaticamente.
+        approved (bool): Se o valor foi aprovado (automaticamente pela IA ou manualmente pelo admin).
         value_updated (bool): Se o valor aprovado já foi propagado ao CountryQuiz.
         timestamp (datetime): Data/hora da última atualização.
+    Observação:
+        Fluxo automático/manual depende do threshold de confiança da IA.
     """
     id = db.Column(db.Integer, primary_key=True)
     country_label = db.Column(db.String(255), nullable=False)
@@ -227,7 +235,7 @@ def admin_tools():
     """
     Rota para exibição das ferramentas administrativas do quiz.
     Apenas usuários autenticados como admin podem acessar.
-    Exibe a interface de updates e logs em tempo real.
+    Exibe painel para histórico, aprovação de sugestões, atualizações batch e logs em tempo real.
     """
     if not current_user.is_authenticated or current_user.username != 'admin':
         return redirect(url_for('home'))
@@ -285,13 +293,13 @@ login_manager.login_view = 'login'
 @login_manager.user_loader
 def load_user(user_id):
     """
-    Carrega um usuário pelo ID.
+    Carrega um usuário pelo ID para integração com Flask-Login.
 
     Args:
         user_id (int): ID do usuário.
 
     Returns:
-        User: Usuário carregado.
+        User: Usuário carregado do banco de dados.
     """
     return User.query.get(int(user_id))
 
@@ -299,6 +307,7 @@ def load_user(user_id):
 def unify_country_data(data):
     """
     Unifica dados de entrada para um país, combinando entradas duplicadas ou fragmentadas.
+    Usado para normalizar dados vindos de múltiplas fontes externas.
 
     Args:
         data (list of dict): Lista de dicionários contendo dados de países.
