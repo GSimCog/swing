@@ -1,3 +1,5 @@
+https://sol.sbc.org.br/index.php/sbgames/article/view/37367
+
 # 🎉 SWInG - quiz app about countries
 
 Welcome to SWInG, a modern and automated geography quiz platform focused on up-to-date country data and AI-powered validation. The app leverages semantic data sources (mainly Wikidata) and integrates OpenAI (GPT-4o) to fill gaps and validate answers. Everything is designed for reliability, automation, and minimal manual intervention, providing a smooth experience for users and administrators.
